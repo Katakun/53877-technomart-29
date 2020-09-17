@@ -1,0 +1,244 @@
+/* Variables */
+
+:root {
+    --basic-amaranth: #EE3643;
+    --hover-mahogany: #CA2C37;
+    --click-cardinal: #BA2732;
+    --basic-apple: #63A63E;
+    --hover-kelly-green: #5FBB2D;
+    --click-la-palma: #518534;
+    --basic-blue: #32425C;
+    --hover-bunting: #293449;
+    --click-midnight-express: #1D2739;
+    --light-gray: rgba(0, 0, 0, 0.0001);
+    --black: #000000;
+    --black-russian: #161D29;
+    --chambray: #3D546F;
+    --summer-sky: #3BBCE3;
+    --golden-tainoi: #FFBF47;
+    --salomie: #FFD180;
+    --plum: #DC91D8;
+    --de-york: #8ED78F;
+    --linen: #F9F5F0;
+    --whisper: #EAEAEA;
+    --alice-blue: #F1F5F7;
+    --silver: #C5C5C5;
+    --old-lace: #F7F3EC;
+    --white: #FFFFFF;
+    --darkgray: #A9A9A9;
+}
+
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Общий фон хедера */
+
+.main-header {
+    background-color: transparent;
+    background-image: url("../img/top-bg.png");
+}
+
+
+/* Top bar */
+
+.main-topbar {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+    background-color: var(--hover-bunting);
+}
+
+.main-topbar a {
+    color: var(--white);
+}
+
+
+/* Middle bar */
+
+.main-middlebar {
+    color: var(--basic-amaranth);
+}
+
+.main-middlebar-address-phone {
+    color: var(--basic-amaranth);
+}
+
+.main-middlebar-address-street {
+    color: var(--basic-blue);
+}
+
+
+/* Navigation */
+
+.main-navigation {
+    background-color: var(--basic-blue);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: var(--white);
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/* Promo */
+
+.promo-list {
+    list-style: none;
+}
+
+.promo-item h3 {
+    font-family: Cuprum, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.promo-material {
+    background-color: var(--golden-tainoi);
+}
+
+.promo-instrument {
+    background-color: var(--summer-sky);
+}
+
+.promo-technic {
+    background-color: var(--plum);
+}
+
+.promo-sale {
+    background-color: var(--de-york);
+}
+
+.promo-delivery {
+    background-color: var(--golden-tainoi);
+}
+
+.button {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.promo-button {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Slider */
+
+.promo-slider h3 {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.promo-slider p {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.slider-button {
+    background-color: var(--basic-amaranth);
+}
+
+
+/* Main goods */
+
+.main-goods-list {
+    list-style: none;
+}
+
+.main-goods-bar {
+    background-color: var(--linen);
+}
+
+.red-button {
+    background-color: var(--basic-amaranth);
+}
+
+.section-header {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-blue);
+}
+
+.main-goods-item h3 {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--black);
+}
+
+.old-price {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: var(--darkgray);
+}
+
+.price-button {
+    font-family: PT Sans, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--basic-amaranth);
+}
+
+.buy-button {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--basic-apple);
+}
+
+.to-bokmark-button {
+    font-family: Cuprum, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-blue);
+    background-color: var(--white);
+    border: 3px solid var(--basic-apple);
+}
