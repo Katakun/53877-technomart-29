@@ -61,7 +61,7 @@ img {
 }
 
 
-/* Top bar */
+/* Верхняя плашка хеддера */
 
 .main-topbar {
     font-size: 18px;
@@ -77,7 +77,7 @@ img {
 }
 
 
-/* Middle bar */
+/* Средняя плашка хеддера  */
 
 .main-middlebar p {
     font-size: 16px;
@@ -107,7 +107,7 @@ img {
 }
 
 
-/* Navigation */
+/* Навигация в хеддере */
 
 .main-navigation {
     background-color: var(--basic-blue);
@@ -126,7 +126,7 @@ img {
 }
 
 
-/* Promo */
+/* Промо-блок */
 
 .promo-list {
     list-style: none;
@@ -174,7 +174,7 @@ img {
 }
 
 
-/* Slider */
+/* Слайдер промо-блока */
 
 .promo-slider h3 {
     font-size: 36px;
@@ -198,7 +198,7 @@ img {
 }
 
 
-/* Main goods */
+/* Популярные товары */
 
 .main-goods-list {
     list-style: none;
@@ -222,45 +222,121 @@ img {
 }
 
 .main-goods-item h3 {
-    font-family: PT Sans, Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
+    font-weight: bold;
     color: var(--black);
+    font-family: PT Sans, Arial, sans-serif;
 }
 
 .old-price {
-    font-family: PT Sans, Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
+    color: var(--darkgray);
+    font-weight: bold;
+    font-family: PT Sans, Arial, sans-serif;
     text-decoration-line: line-through;
     text-transform: uppercase;
-    color: var(--darkgray);
 }
 
 .price-button {
-    font-family: PT Sans, Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
-    text-transform: uppercase;
     color: var(--white);
+    font-weight: bold;
+    font-family: PT Sans, Arial, sans-serif;
+    text-transform: uppercase;
     background-color: var(--basic-amaranth);
 }
 
 .buy-button {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
-    text-transform: uppercase;
     color: var(--white);
+    font-weight: normal;
+    font-family: Cuprum, Arial, sans-serif;
+    text-transform: uppercase;
     background-color: var(--basic-apple);
 }
 
 .to-bokmark-button {
-    font-family: Cuprum, Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
-    text-transform: uppercase;
     color: var(--basic-blue);
+    font-weight: normal;
+    font-family: Cuprum, Arial, sans-serif;
+    text-transform: uppercase;
     background-color: var(--white);
     border: 3px solid var(--basic-apple);
+}
+
+
+/* Популярные производители */
+
+.main-brands-bar {
+    background-color: var(--linen);
+}
+
+.main-brands-list {
+    list-style: none;
+}
+
+.main-brands-item {
+    background-color: var(--white);
+}
+
+
+/* Сервисы */
+
+.service {
+    background-color: var(--alice-blue);
+}
+
+.service p {
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--black);
+    font-weight: normal;
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-button {
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--white);
+    font-weight: bold;
+    font-family: Cuprum, Arial, sans-serif;
+    background-color: var(--basic-blue);
+}
+
+.service-button-active {
+    color: var(--basic-blue);
+    background-color: var(--white);
+}
+
+.service h2 {
+    color: var(--black);
+}
+
+
+/* О компании */
+
+.about h3 {
+    color: var(--black);
+}
+
+.about-transport-list {
+    list-style: none;
+}
+
+.about-transport-item {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--black);
+    font-family: Cuprum, Arial, sans-serif;
 }
