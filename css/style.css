@@ -26,6 +26,9 @@
     --old-lace: #F7F3EC;
     --white: #FFFFFF;
     --darkgray: #A9A9A9;
+    --magnolia: #F3F7F9;
+    --social: linear-gradient(0deg, #212A3A, #212A3A);
+    --cuprun: Cuprum, Arial, Helvetica, sans-serif;
 }
 
 
@@ -52,6 +55,17 @@ img {
     height: auto;
 }
 
+.button {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--white);
+    font-weight: normal;
+    font-family: var(--cuprun);
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+}
+
 
 /* Общий фон хедера */
 
@@ -74,6 +88,7 @@ img {
 
 .main-topbar a {
     color: var(--white);
+    background-color: var(--basic-amaranth);
 }
 
 
@@ -104,6 +119,27 @@ img {
     font-weight: normal;
     font-family: Cuprum, Arial, sans-serif;
     font-style: normal;
+}
+
+.login,
+.registration {
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--black);
+    font-weight: normal;
+    font-family: var(--cuprun);
+    align-items: center;
+    text-align: center;
+}
+
+.login:hover,
+.registration:hover {
+    color: var(--basic-amaranth)
+}
+
+.login:active,
+.registration:active {
+    color: var(--silver)
 }
 
 
@@ -160,17 +196,16 @@ img {
     background-color: var(--golden-tainoi);
 }
 
-.button {
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--white);
-    font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
-    text-transform: uppercase;
+.promo-button {
+    background-color: rgba(255, 255, 255, 0.3)
 }
 
-.promo-button {
-    background-color: rgba(255, 255, 255, 0.3);
+.promo-button:hover {
+    background-color: rgba(197, 197, 197, 0.3)
+}
+
+.promo-button:active {
+    background-color: rgba(169, 169, 169, 0.3)
 }
 
 
@@ -339,4 +374,82 @@ img {
     font-weight: normal;
     color: var(--black);
     font-family: Cuprum, Arial, sans-serif;
+}
+
+
+/* Футер */
+
+
+/* Футер верхняя часть */
+
+.footer-top {
+    background-color: var(--basic-blue);
+}
+
+.footer-logo {
+    background-color: var(--basic-amaranth);
+}
+
+.footer-address {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--magnolia);
+    font-family: Cuprum, Arial, sans-serif;
+    font-style: normal;
+}
+
+.footer-address a {
+    color: var(--magnolia);
+}
+
+.footer-nav-company,
+.footer-nav-goods {
+    list-style: none;
+}
+
+.footer-top-nav {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: Cuprum, Arial, sans-serif;
+}
+
+.footer-nav-company a {
+    color: var(--alice-blue);
+}
+
+.footer-nav-goods a {
+    color: var(--salomie);
+}
+
+
+/* Футер нижняя часть */
+
+.footer-social {
+    background-color: var(--hover-bunting);
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.footer-social-list {
+    list-style: none;
+}
+
+.social-button {
+    background-color: var(--social);
+}
+
+.footer-social-list a {
+    color: var(--white);
+}
+
+.footer-social address {
+    font-style: normal;
+    color: var(--white);
+}
+
+.footer-social a {
+    color: var(--salomie);
 }
