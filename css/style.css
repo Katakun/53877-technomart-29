@@ -386,13 +386,18 @@ img {
     line-height: 30px;
     color: var(--white);
     font-weight: bold;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprun);
     background-color: var(--basic-blue);
+    border-style: none;
 }
 
 .service-button-active {
     color: var(--basic-blue);
     background-color: var(--white);
+}
+
+.service-button:hover:not(.service-button-active) {
+    background-color: var(--hover-bunting);
 }
 
 .service h2 {
@@ -465,6 +470,16 @@ img {
     color: var(--salomie);
 }
 
+.footer-nav-company a:hover,
+.footer-nav-goods a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav-company a:active,
+.footer-nav-goods a:active {
+    opacity: 0.5;
+}
+
 
 /* Футер нижняя часть */
 
@@ -479,8 +494,16 @@ img {
     list-style: none;
 }
 
-.social-button {
+.social-icon {
     background-color: var(--social);
+}
+
+.social-icon:hover {
+    background-color: var(--basic-amaranth);
+}
+
+.social-icon:active {
+    background-color: var(--basic-amaranth);
 }
 
 .footer-social-list a {
@@ -489,9 +512,16 @@ img {
 
 .footer-social address {
     font-style: normal;
-    color: var(--white);
 }
 
 .footer-social a {
     color: var(--salomie);
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a:active {
+    color: var(--basic-amaranth);
 }
