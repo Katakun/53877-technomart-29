@@ -169,6 +169,7 @@ img {
 
 .main-navigation {
     background-color: var(--basic-blue);
+    box-shadow: inset 0px -5px 0px var(--hover-bunting);
 }
 
 .site-navigation {
@@ -435,6 +436,7 @@ img {
 
 .footer-logo {
     background-color: var(--basic-amaranth);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .footer-address {
