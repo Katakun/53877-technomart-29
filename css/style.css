@@ -86,9 +86,29 @@ img {
     background-color: var(--hover-bunting);
 }
 
+.main-topbar-search input {
+    background-color: transparent;
+}
+
+.main-topbar-search input:focus {
+    background-color: var(--white);
+}
+
+.main-topbar-search input::placeholder {
+    color: var(--white);
+}
+
+.main-topbar-search input::placeholder:focus {
+    color: var(--black);
+}
+
 .main-topbar a {
     color: var(--white);
-    background-color: var(--basic-amaranth);
+}
+
+.main-topbar a:active {
+    color: var(--white);
+    opacity: 0.5;
 }
 
 
@@ -228,8 +248,16 @@ img {
     font-family: Cuprum, Arial, sans-serif;
 }
 
-.slider-button {
+.red-button {
     background-color: var(--basic-amaranth);
+}
+
+.red-button:hover {
+    background-color: var(--hover-mahogany);
+}
+
+.red-button:active {
+    background-color: var(--click-cardinal);
 }
 
 
@@ -241,10 +269,6 @@ img {
 
 .main-goods-bar {
     background-color: var(--linen);
-}
-
-.red-button {
-    background-color: var(--basic-amaranth);
 }
 
 .section-header {
