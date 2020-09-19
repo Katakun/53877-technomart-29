@@ -27,6 +27,7 @@
     --white: #FFFFFF;
     --darkgray: #A9A9A9;
     --magnolia: #F3F7F9;
+    --rock-blue: #99A1AE;
     --social: linear-gradient(0deg, #212A3A, #212A3A);
     --cuprun: Cuprum, Arial, Helvetica, sans-serif;
 }
@@ -64,6 +65,7 @@ img {
     text-transform: uppercase;
     align-items: center;
     text-align: center;
+    border-style: none;
 }
 
 
@@ -306,27 +308,43 @@ img {
     font-family: PT Sans, Arial, sans-serif;
     text-transform: uppercase;
     background-color: var(--basic-amaranth);
+    border-style: none;
+}
+
+.price-button:hover {
+    background-color: var(--hover-mahogany);
+}
+
+.price-button:active {
+    background-color: var(--click-cardinal);
 }
 
 .buy-button {
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--white);
-    font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
-    text-transform: uppercase;
     background-color: var(--basic-apple);
 }
 
+.buy-button:hover {
+    background-color: var(--hover-kelly-green);
+}
+
+.buy-button:active {
+    background-color: var(--click-la-palma);
+}
+
 .to-bokmark-button {
-    font-size: 14px;
-    line-height: 18px;
     color: var(--basic-blue);
-    font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
-    text-transform: uppercase;
     background-color: var(--white);
     border: 3px solid var(--basic-apple);
+}
+
+.to-bokmark-button:hover {
+    color: var(--basic-blue);
+    border: 3px solid var(--basic-blue);
+}
+
+.to-bokmark-button:active {
+    color: var(--rock-blue);
+    border: 3px solid var(--rock-blue);
 }
 
 
