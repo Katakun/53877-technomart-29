@@ -29,7 +29,7 @@
     --magnolia: #F3F7F9;
     --rock-blue: #99A1AE;
     --social: linear-gradient(0deg, #212A3A, #212A3A);
-    --cuprun: Cuprum, Arial, Helvetica, sans-serif;
+    --cuprum: Cuprum, Arial, Helvetica, sans-serif;
 }
 
 
@@ -61,7 +61,7 @@ img {
     line-height: 18px;
     color: var(--white);
     font-weight: normal;
-    font-family: var(--cuprun);
+    font-family: var(--cuprum);
     text-transform: uppercase;
     align-items: center;
     text-align: center;
@@ -84,7 +84,7 @@ img {
     line-height: 24px;
     color: var(--white);
     font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
     background-color: var(--hover-bunting);
 }
 
@@ -121,7 +121,7 @@ img {
     line-height: 23px;
     color: var(--basic-amaranth);
     font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
     font-style: italic;
 }
 
@@ -130,7 +130,7 @@ img {
     line-height: 30px;
     color: var(--basic-amaranth);
     font-weight: bold;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
     font-style: normal;
 }
 
@@ -139,7 +139,7 @@ img {
     line-height: 24px;
     color: var(--basic-blue);
     font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
     font-style: normal;
 }
 
@@ -149,7 +149,7 @@ img {
     line-height: 21px;
     color: var(--black);
     font-weight: normal;
-    font-family: var(--cuprun);
+    font-family: var(--cuprum);
     align-items: center;
     text-align: center;
 }
@@ -181,7 +181,7 @@ img {
     line-height: 24px;
     color: var(--white);
     font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
 }
 
 
@@ -196,7 +196,7 @@ img {
     line-height: 30px;
     color: var(--white);
     font-weight: bold;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
 }
 
 .promo-material {
@@ -239,7 +239,7 @@ img {
     line-height: 36px;
     color: var(--white);
     font-weight: bold;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
     text-transform: uppercase;
 }
 
@@ -248,7 +248,7 @@ img {
     line-height: 24px;
     color: var(--white);
     font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
 }
 
 .red-button {
@@ -279,7 +279,7 @@ img {
     line-height: 30px;
     color: var(--basic-blue);
     font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
     text-transform: uppercase;
 }
 
@@ -387,7 +387,7 @@ img {
     line-height: 30px;
     color: var(--white);
     font-weight: bold;
-    font-family: var(--cuprun);
+    font-family: var(--cuprum);
     background-color: var(--basic-blue);
     border-style: none;
 }
@@ -421,7 +421,7 @@ img {
     line-height: 24px;
     font-weight: normal;
     color: var(--black);
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
 }
 
 
@@ -444,7 +444,7 @@ img {
     line-height: 24px;
     font-weight: normal;
     color: var(--magnolia);
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
     font-style: normal;
 }
 
@@ -461,7 +461,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    font-family: Cuprum, Arial, sans-serif;
+    font-family: var(--cuprum);
 }
 
 .footer-nav-company a {
@@ -487,6 +487,7 @@ img {
 
 .footer-social {
     background-color: var(--hover-bunting);
+    font-family: var(--cuprum);
     font-size: 16px;
     line-height: 18px;
     color: var(--white);
