@@ -56,6 +56,20 @@ img {
     height: auto;
 }
 
+
+/* Grid */
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
 .button {
     font-size: 14px;
     line-height: 18px;
@@ -71,20 +85,33 @@ img {
 
 /* Общий фон хедера */
 
-.main-header {
+
+/* .main-header {
     background-color: transparent;
-}
+} */
 
 
 /* Верхняя плашка хеддера */
 
 .main-topbar {
+    background-color: var(--hover-bunting);
+}
+
+.main-topbar-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
     font-size: 18px;
     line-height: 24px;
     color: var(--white);
     font-weight: normal;
     font-family: var(--cuprum);
-    background-color: var(--hover-bunting);
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-topbar-logo {
+    background-color: var(--basic-amaranth);
 }
 
 .main-topbar-search input {
@@ -103,17 +130,28 @@ img {
     color: var(--black);
 }
 
-.main-topbar a {
+.main-topbar-wrapper a {
     color: var(--white);
 }
 
-.main-topbar a:active {
+.main-topbar-wrapper a:active {
     color: var(--white);
     opacity: 0.5;
 }
 
 
 /* Средняя плашка хеддера  */
+
+.main-middlebar-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-middlebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .main-middlebar p {
     font-size: 16px;
@@ -169,10 +207,17 @@ img {
 .main-navigation {
     background-color: var(--basic-blue);
     box-shadow: inset 0px -5px 0px var(--hover-bunting);
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .site-navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .site-navigation a {
