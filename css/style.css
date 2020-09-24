@@ -98,6 +98,7 @@ img {
 }
 
 .main-topbar-wrapper {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     font-size: 18px;
@@ -143,6 +144,7 @@ img {
 /* Средняя плашка хеддера  */
 
 .main-middlebar-wrapper {
+    box-sizing: border-box;
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
@@ -231,8 +233,25 @@ img {
 
 /* Промо-блок */
 
+.main-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .promo-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
+}
+
+.promo-list li:last-child {
+    grid-column: 1/3;
+    grid-row: 2/4;
 }
 
 .promo-item h3 {
@@ -311,11 +330,20 @@ img {
 /* Популярные товары */
 
 .main-goods-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .main-goods-bar {
     background-color: var(--linen);
+    box-sizing: border-box;
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
 }
 
 .section-header {
@@ -397,10 +425,19 @@ img {
 
 .main-brands-bar {
     background-color: var(--linen);
+    box-sizing: border-box;
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
 }
 
 .main-brands-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .main-brands-item {
@@ -412,6 +449,30 @@ img {
 
 .service {
     background-color: var(--alice-blue);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.servce-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1 / 2;
+}
+
+.service-button {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.service-text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.service-image {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 }
 
 .service p {
@@ -424,6 +485,8 @@ img {
 
 .service-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .service-button {
