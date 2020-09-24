@@ -515,6 +515,11 @@ img {
 
 /* О компании */
 
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 .about h3 {
     color: var(--black);
 }
@@ -564,18 +569,41 @@ img {
     list-style: none;
 }
 
-.footer-top-nav {
+.top-footer-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer-nav-company {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-nav-company a {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
     font-family: var(--cuprum);
-}
-
-.footer-nav-company a {
     color: var(--alice-blue);
 }
 
+.footer-nav-goods {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .footer-nav-goods a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    font-family: var(--cuprum);
     color: var(--salomie);
 }
 
