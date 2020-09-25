@@ -97,6 +97,15 @@ img {
     background-color: var(--hover-bunting);
 }
 
+
+/* Container */
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .main-topbar-wrapper {
     box-sizing: border-box;
     display: grid;
@@ -106,9 +115,6 @@ img {
     color: var(--white);
     font-weight: normal;
     font-family: var(--cuprum);
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 .main-topbar-logo {
@@ -145,9 +151,6 @@ img {
 
 .main-middlebar-wrapper {
     box-sizing: border-box;
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 .main-middlebar {
@@ -209,9 +212,6 @@ img {
 .main-navigation {
     background-color: var(--basic-blue);
     box-shadow: inset 0px -5px 0px var(--hover-bunting);
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 .site-navigation {
@@ -234,8 +234,6 @@ img {
 /* Промо-блок */
 
 .main-wrapper {
-    width: 940px;
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
@@ -341,7 +339,6 @@ img {
 .main-goods-bar {
     background-color: var(--linen);
     box-sizing: border-box;
-    width: 940px;
     display: grid;
     grid-template-columns: 1fr min-content;
 }
@@ -426,7 +423,6 @@ img {
 .main-brands-bar {
     background-color: var(--linen);
     box-sizing: border-box;
-    width: 940px;
     display: grid;
     grid-template-columns: 1fr min-content;
 }
@@ -449,30 +445,30 @@ img {
 
 .service {
     background-color: var(--alice-blue);
-    display: grid;
+    /* display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .servce-title {
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 3;
-    grid-row: 1 / 2;
+    grid-row: 1 / 2; */
 }
 
 .service-button {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    /* grid-column: 1 / 2;
+    grid-row: 2 / 3; */
 }
 
 .service-text {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    /* grid-column: 2 / 3;
+    grid-row: 2 / 3; */
 }
 
 .service-image {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    /* grid-column: 3 / 4;
+    grid-row: 2 / 3; */
 }
 
 .service p {
