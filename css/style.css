@@ -53,6 +53,22 @@
         max-width: 100%;
         height: auto;
     }
+    /* Outline */
+    
+    .outline-red {
+        outline: 3px solid rgba(255, 0, 0, 0.7);
+        outline-offset: -3px;
+    }
+    
+    .outline-green {
+        outline: 3px solid rgba(0, 255, 0, 0.7);
+        outline-offset: -3px;
+    }
+    
+    .outline-blue {
+        outline: 3px solid rgba(0, 0, 255, 0.7);
+        outline-offset: -3px;
+    }
     /* Grid */
     
     .page {
@@ -87,13 +103,16 @@
     .container {
         width: 940px;
         margin: 0 auto;
-        padding: 0 10px;
+    }
+    
+    .main-header {
+        background-color: var(--magnolia);
+        height: 320px;
     }
     
     .main-topbar-wrapper {
         box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 1fr 1fr 2fr;
+        display: flex;
         font-size: 18px;
         line-height: 24px;
         color: var(--white);
@@ -103,6 +122,11 @@
     
     .main-topbar-logo {
         background-color: var(--basic-amaranth);
+        width: 220px;
+        height: 47px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
     
     .main-topbar-search input {
@@ -129,15 +153,17 @@
         color: var(--white);
         opacity: 0.5;
     }
+    
+    .main-topbar-user-menu {
+        margin-left: auto;
+    }
     /* Средняя плашка хеддера  */
     
-    .main-middlebar-wrapper {
-        box-sizing: border-box;
-    }
-    
     .main-middlebar {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
+        width: 940px;
+        height: 158px;
     }
     
     .main-middlebar p {
@@ -147,6 +173,12 @@
         font-weight: normal;
         font-family: var(--cuprum);
         font-style: italic;
+        margin-top: 46px;
+        margin-left: 30px;
+    }
+    
+    .main-middlebar-address {
+        margin-top: 46px;
     }
     
     .main-middlebar-address-phone {
@@ -165,6 +197,10 @@
         font-weight: normal;
         font-family: var(--cuprum);
         font-style: normal;
+    }
+    
+    .main-middlebar div {
+        margin-top: 46px;
     }
     
     .login,
@@ -190,16 +226,19 @@
     /* Навигация в хеддере */
     
     .main-navigation {
+        box-sizing: border-box;
         background-color: var(--basic-blue);
         box-shadow: inset 0px -5px 0px var(--hover-bunting);
+        height: 60px;
+        padding: 0 55px;
     }
     
     .site-navigation {
         list-style: none;
-        margin: 0;
+        margin: auto auto;
         padding: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
     }
     
     .site-navigation a {
