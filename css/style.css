@@ -578,11 +578,14 @@
     
     .footer-top {
         background-color: var(--basic-blue);
+        height: 193px;
     }
     
     .footer-logo {
         background-color: var(--basic-amaranth);
         box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+        width: 220px;
+        height: 68px;
     }
     
     .footer-address {
@@ -592,29 +595,37 @@
         color: var(--magnolia);
         font-family: var(--cuprum);
         font-style: normal;
+        width: 360px;
     }
     
     .footer-address a {
         color: var(--magnolia);
     }
     
-    .footer-nav-company,
-    .footer-nav-goods {
+    .footer-nav-company {
         list-style: none;
+        display: flex;
+        width: 550px;
+        justify-content: space-between;
     }
     
-    .top-footer-grid {
-        display: grid;
-        grid-template-columns: 5fr 7fr;
-        grid-template-rows: 1fr 1fr;
+    .footer-nav-goods {
+        list-style: none;
+        display: flex;
+        width: 525px;
+        justify-content: space-between;
+    }
+    
+    .top-footer-nav {
+        display: flex;
+        justify-content: space-between;
     }
     
     .footer-nav-company {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 30px;
     }
     
     .footer-nav-company a {
@@ -625,12 +636,16 @@
         color: var(--alice-blue);
     }
     
+    .top-footer-catalog {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .footer-nav-goods {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 20px;
     }
     
     .footer-nav-goods a {
@@ -666,7 +681,6 @@
     
     .footer-social-griid {
         display: grid;
-        grid-template-columns: 2fr 2fr 1fr 1fr;
     }
     
     .footer-social-list {
@@ -675,7 +689,6 @@
         padding: 0;
         list-style: none;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     }
     
     .social-icon {
