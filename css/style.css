@@ -384,6 +384,11 @@
         text-transform: uppercase;
     }
     
+    .main-goods-item {
+        box-sizing: border-box;
+        border: 1px solid var(--whisper);
+    }
+    
     .main-goods-item h3 {
         font-size: 18px;
         line-height: 20px;
@@ -487,30 +492,17 @@
     
     .service {
         background-color: var(--alice-blue);
-        /* display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr; */
+        height: 522px;
     }
     
-    .servce-title {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row: 1 / 2;
-    }
-    
-    .service-button {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+    .service-promo {
+        display: flex;
+        justify-content: space-between;
     }
     
     .service-text {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    
-    .service-image {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
+        background: url(../img/track.png) no-repeat top right;
+        width: 620px;
     }
     
     .service p {
@@ -535,6 +527,7 @@
         font-family: var(--cuprum);
         background-color: var(--basic-blue);
         border-style: none;
+        width: 240px;
     }
     
     .service-button-active {
