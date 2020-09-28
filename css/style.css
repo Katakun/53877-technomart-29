@@ -243,11 +243,13 @@
         box-shadow: inset 0px -5px 0px var(--hover-bunting);
         height: 60px;
         padding: 0 55px;
+        display: flex;
     }
     
     .site-navigation {
         list-style: none;
-        margin: auto auto;
+        margin: auto 0;
+        width: 100%;
         padding: 0;
         display: flex;
         justify-content: space-between;
@@ -275,7 +277,6 @@
     .promo-slider {
         grid-column: 1/3;
         grid-row: 2/4;
-        
         background-color: #787372;
         background-image: url("../img/worker.jpg");
     }
@@ -328,7 +329,6 @@
         font-weight: bold;
         font-family: var(--cuprum);
         text-transform: uppercase;
-        
     }
     
     .promo-slider p {
@@ -337,10 +337,7 @@
         color: var(--white);
         font-weight: normal;
         font-family: var(--cuprum);
-       
     }
-    
-    
     
     .red-button {
         background-color: var(--basic-amaranth);
@@ -355,6 +352,12 @@
     }
     /* Популярные товары */
     
+    .main-goods {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+    
     .main-goods-list {
         margin: 0;
         padding: 0;
@@ -367,8 +370,9 @@
     .main-goods-bar {
         background-color: var(--linen);
         box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 1fr min-content;
+        display: flex;
+        justify-content: space-between;
+        height: 89px;
     }
     
     .section-header {
@@ -446,11 +450,18 @@
     }
     /* Популярные производители */
     
+    .main-brands {
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+    
     .main-brands-bar {
         background-color: var(--linen);
         box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 1fr min-content;
+        display: flex;
+        justify-content: space-between;
+        height: 89px;
     }
     
     .main-brands-list {
@@ -463,7 +474,14 @@
     }
     
     .main-brands-item {
+        box-sizing: border-box;
         background-color: var(--white);
+        border: 1px solid #EAEAEA;
+        width: 220px;
+        height: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /* Сервисы */
     
