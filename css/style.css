@@ -545,8 +545,17 @@
     /* О компании */
     
     .about {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+        display: flex;
+        justify-content: space-between;
+        height: 496px;
+    }
+    
+    .about-map {
+        width: 300px;
+    }
+    
+    .about-transport {
+        width: 460px;
     }
     
     .about h3 {
