@@ -580,12 +580,16 @@
         background-color: var(--basic-blue);
         height: 193px;
     }
+    /* footer logo */
     
-    .footer-logo {
+    .top-footer-nav div {
         background-color: var(--basic-amaranth);
         box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
         width: 220px;
         height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .footer-address {
