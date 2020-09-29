@@ -675,20 +675,32 @@
         color: var(--white);
     }
     
-    .footer-social p {
+    .footer-social-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 107px;
+    }
+    
+    .footer-social-flex p {
         margin: 0;
     }
     
-    .footer-social-griid {
-        display: grid;
-    }
-    
-    .footer-social-list {
-        justify-self: center;
+    .footer-social-flex ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: grid;
+        display: flex;
+        justify-content: space-between;
+        width: 134px;
+    }
+    
+    .footer-social-flex address {
+        width: 160px;
+    }
+    
+    .footer-social-flex p:last-child {
+        width: 140px;
     }
     
     .social-icon {
