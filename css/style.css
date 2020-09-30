@@ -361,12 +361,6 @@ box-sizing: border-box;
 
 /* Популярные товары */
 
-.main-goods {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 20px;
-}
-
 .main-goods-list {
   margin: 0;
   padding: 0;
@@ -465,11 +459,6 @@ box-sizing: border-box;
 
 /* Популярные производители */
 
-.main-brands {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 20px;
-}
 
 .main-brands-bar {
   background-color: var(--linen);
@@ -620,30 +609,23 @@ box-sizing: border-box;
   color: var(--magnolia);
 }
 
-.footer-nav-company {
-  list-style: none;
-  display: flex;
-  width: 550px;
-  justify-content: space-between;
-}
-
-.footer-nav-goods {
-  list-style: none;
-  display: flex;
-  width: 525px;
-  justify-content: space-between;
-}
-
 .top-footer-nav {
   display: flex;
   justify-content: space-between;
 }
 
 .footer-nav-company {
-  margin: 0;
-  padding: 0;
   list-style: none;
-  margin-top: 30px;
+  display: flex;
+  width: 550px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 30px 0 0;
+}
+
+.footer-nav-company li {
+  margin-left: 20px;
 }
 
 .footer-nav-company a {
@@ -660,10 +642,17 @@ box-sizing: border-box;
 }
 
 .footer-nav-goods {
-  margin: 0;
   padding: 0;
+  margin: 20px 0 0;
   list-style: none;
-  margin-top: 20px;
+  width: 525px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer-nav-goods li {
+  margin-left: 20px;
 }
 
 .footer-nav-goods a {
