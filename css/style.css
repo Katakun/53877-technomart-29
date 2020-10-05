@@ -4,7 +4,7 @@
   --basic-amaranth: #ee3643;
   --hover-mahogany: #ca2c37;
   --click-cardinal: #BA2732;
-  --basic-apple: #63A63E;
+  --basic-apple: #63a63e;
   --hover-kelly-green: #5FBB2D;
   --click-la-palma: #518534;
   --basic-blue: #32425C;
@@ -60,17 +60,17 @@ img {
 /* Outline */
 
 .outline-red {
-  outline: 3px solid rgba(255, 0, 0, 0.7);
+  outline: 1px solid rgba(255, 0, 0, 0.7);
   outline-offset: -3px;
 }
 
 .outline-green {
-  outline: 3px solid rgba(0, 255, 0, 0.7);
+  outline: 1px solid rgba(0, 255, 0, 0.7);
   outline-offset: -3px;
 }
 
 .outline-blue {
-  outline: 3px solid rgba(0, 0, 255, 0.7);
+  outline: 1px solid rgba(0, 0, 255, 0.7);
   outline-offset: -3px;
 }
 
@@ -161,13 +161,14 @@ img {
   position: relative
 }
 
-.header-search {
+.header-input-search {
   order: 1;
   background-color: transparent;
   width: 271px;
   height: 42px;
   border: none;
   padding: 0 0 0 42px;
+  box-sizing: border-box;
 }
 
 
@@ -183,22 +184,27 @@ img {
 }
 
 
-.header-search:focus + svg path {
+.header-input-search:focus + svg path {
   fill: var(--basic-amaranth);
 }
 
+.header-input-search:focus + svg {
+  fill: var(--basic-amaranth);
+  opacity: 1;
+}
 
 
-.header-search:focus {
+.header-input-search:focus {
   background-color: var(--white);
   outline: none;
 }
 
-.header-search::placeholder {
+.header-input-search::placeholder {
   color: var(--white);
+  opacity: 1;
 }
 
-.header-search::placeholder:focus {
+.header-input-search::placeholder:focus {
   color: var(--black);
 }
 
@@ -206,14 +212,62 @@ img {
   color: var(--white);
 }
 
-/*.main-topbar-wrapper a:active {*/
-/*  color: var(--white);*/
-/*  opacity: 0.5;*/
-/*}*/
 
 .main-topbar-user-menu {
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
+.main-topbar-user-menu a {
+  display: block;
+  padding: 9px 23px;
+  position: relative;
+}
+.main-topbar-bookmark::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 16px;
+  height: 18px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.main-topbar-cart::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 16px;
+  height: 18px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.main-topbar-bookmark:hover::before,
+.main-topbar-cart:hover::before {
+  opacity: 1;
+}
+.main-topbar-bookmark:active,
+.main-topbar-cart:active {
+  opacity: 0.3;
+}
+.main-topbar-order {
+  background-color: var(--basic-apple);
+}
+.main-topbar-order:hover {
+  background-color: var(--hover-kelly-green);
+}
+.main-topbar-order:active {
+  background-color: var(--basic-apple);
+  color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* Средняя плашка хеддера  */
 
