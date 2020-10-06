@@ -337,7 +337,10 @@ img {
 
 .main-middlebar div {
   margin-top: 46px;
+  display: flex;
 }
+
+
 
 .login,
 .registration {
@@ -346,8 +349,16 @@ img {
   color: var(--black);
   font-weight: normal;
   font-family: var(--cuprum);
-  align-items: center;
-  text-align: center;
+  /*align-items: center;*/
+  /*text-align: center;*/
+  display: block;
+  height: 45px;
+  padding: 11px 24px;
+  background-color: var(--white);
+  box-sizing: border-box;
+}
+.login {
+  margin-right: 10px;
 }
 
 .login:hover,
