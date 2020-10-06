@@ -13,7 +13,7 @@
   --light-gray: rgba(0, 0, 0, 0.0001);
   --black: #000000;
   --black-russian: #161D29;
-  --chambray: #3D546F;
+  --chambray: #3d546f;
   --summer-sky: #3BBCE3;
   --golden-tainoi: #FFBF47;
   --salomie: #FFD180;
@@ -23,7 +23,7 @@
   --whisper: #EAEAEA;
   --alice-blue: #F1F5F7;
   --alice-blue-catalog: #F2F6F8;
-  --silver: #C5C5C5;
+  --silver: #c5c5c5;
   --old-lace: #F7F3EC;
   --white: #ffffff;
   --darkgray: #A9A9A9;
@@ -349,16 +349,30 @@ img {
   color: var(--black);
   font-weight: normal;
   font-family: var(--cuprum);
-  /*align-items: center;*/
-  /*text-align: center;*/
   display: block;
   height: 45px;
-  padding: 11px 24px;
+  padding: 12px 24px;
   background-color: var(--white);
   box-sizing: border-box;
+  position: relative;
 }
+.login svg {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+}
+
 .login {
   margin-right: 10px;
+  padding-left: 45px;
+}
+
+.login:hover svg path {
+  fill: var(--chambray);
+}
+
+.login:active svg path {
+  fill: var(--silver);
 }
 
 .login:hover,
