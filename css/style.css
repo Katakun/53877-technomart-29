@@ -278,37 +278,61 @@ img {
   height: 158px;
 }
 
-.main-middlebar p {
+.main-middlebar > p {
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-amaranth);
   font-weight: normal;
   font-family: var(--cuprum);
   font-style: italic;
-  margin-top: 46px;
+  margin-top: 38px;
   margin-left: 30px;
 }
 
 .main-middlebar-address {
   margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main-middlebar-address-phone {
+.main-middlebar-address a {
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-amaranth);
   font-weight: bold;
   font-family: var(--cuprum);
   font-style: normal;
+  position: relative;
+  padding-left: 74px;
+  padding-top: 5px;
+  display: block;
+  width: 270px;
+  height: 45px;
+  border: 3px solid var(--white);
+  box-sizing: border-box;
 }
 
-.main-middlebar-address .main-middlebar-address-street {
+.main-middlebar-address a::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 39px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-middlebar-address p {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-blue);
   font-weight: normal;
   font-family: var(--cuprum);
   font-style: normal;
+  margin-top: 5px;
 }
 
 .main-middlebar div {
