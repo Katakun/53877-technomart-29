@@ -94,7 +94,7 @@ img {
   font-weight: normal;
   font-family: var(--cuprum);
   text-transform: uppercase;
-  align-items: center;
+
   text-align: center;
   border-style: none;
 }
@@ -126,6 +126,7 @@ img {
 .main-header {
   background-color: var(--magnolia);
   height: 320px;
+  margin-bottom: 59px;
 }
 
 .main-topbar-wrapper {
@@ -448,10 +449,15 @@ img {
   color: var(--white);
   font-weight: bold;
   font-family: var(--cuprum);
+  margin: 0;
+  padding-left: 23px;
+  padding-top: 20px;
 }
 
 .promo-material {
-  background-color: var(--golden-tainoi);
+  background:
+    var(--golden-tainoi)
+    url("../img/icon-vedro.svg") no-repeat 213px 31px;
 }
 
 .promo-instrument {
@@ -471,15 +477,20 @@ img {
 }
 
 .promo-button {
-  background-color: rgba(255, 255, 255, 0.3)
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  width: 135px;
+  padding: 10px 0;
+  margin-left: 23px;
+  margin-top: 14px;
 }
 
 .promo-button:hover {
-  background-color: rgba(197, 197, 197, 0.3)
+  background-color: rgba(197, 197, 197, 0.3);
 }
 
 .promo-button:active {
-  background-color: rgba(169, 169, 169, 0.3)
+  background-color: rgba(169, 169, 169, 0.3);
 }
 
 /* Слайдер промо-блока */
