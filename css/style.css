@@ -582,6 +582,23 @@ img {
   right: 24px;
 }
 
+.slider-indication {
+  position: absolute;
+  left: 295px;
+  bottom: 36px;
+}
+
+.slider-indication button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
 
 .red-button {
   background-color: var(--basic-amaranth);
