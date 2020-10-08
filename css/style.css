@@ -461,19 +461,27 @@ img {
 }
 
 .promo-instrument {
-  background-color: var(--summer-sky);
+  background:
+    var(--summer-sky)
+    url("../img/icon-drel.svg") no-repeat 194px 34px;
 }
 
 .promo-technic {
-  background-color: var(--plum);
+  background:
+    var(--plum)
+    url("../img/icon-tractor.svg") no-repeat 191px 31px;
 }
 
 .promo-sale {
-  background-color: var(--de-york);
+  background:
+    var(--de-york)
+    url("../img/icon-sale.svg") no-repeat 196px 26px;
 }
 
 .promo-delivery {
-  background-color: var(--golden-tainoi);
+  background:
+    var(--golden-tainoi)
+    url("../img/icon-delivery.svg") no-repeat 191px 32px;
 }
 
 .promo-button {
