@@ -579,7 +579,7 @@ img {
   bottom: 27px;
 }
 
-.slide-none {
+.display-none {
   display: none;
 }
 
@@ -682,6 +682,14 @@ img {
   margin-top: 29px;
 }
 
+.section-button {
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-right: 14px;
+  width: 192px;
+  padding: 10px 0;
+}
+
 .section-header-catalog {
   background-color: var(--alice-blue-catalog);
 }
@@ -701,6 +709,8 @@ img {
 .main-goods-item {
   box-sizing: border-box;
   border: 1px solid var(--whisper);
+  width: 220px;
+  height: 318px;
 }
 
 .main-goods-item h3 {
