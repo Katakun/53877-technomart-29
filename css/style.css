@@ -735,9 +735,30 @@ img {
   padding: 0 30px;
   margin: auto 0 0 0;
 }
-.main-goods-item  img {
+
+.main-goods-item img {
   margin: auto auto 0 auto;
 }
+
+.main-goods-item p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.main-goods-item del {
+  margin-bottom: 13px;
+}
+
+.main-goods-item button {
+  margin-bottom: 21px;
+  padding: 10px 0;
+  width: 141px;
+}
+
 
 .old-price {
   font-size: 17px;
@@ -758,6 +779,10 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-amaranth);
   border-style: none;
+  border-radius: 3px;
+  background-image:
+    linear-gradient(225deg, var(--white) 11%, transparent 11%),
+    linear-gradient(315deg, var(--white) 11%, transparent 11%);
 }
 
 .price-button:hover {
