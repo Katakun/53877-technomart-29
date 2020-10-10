@@ -715,8 +715,22 @@ img {
   height: 318px;
   display: flex;
   flex-direction: column;
-
 }
+
+.main-goods-item:hover {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.main-goods-item:hover img {
+  display: none;
+}
+.main-goods-item:hover .buy-button {
+  display: block;
+}
+.main-goods-item:hover .to-bookmark-button {
+  display: block;
+}
+
+
 
 .main-goods-item a {
   display: flex;
@@ -795,6 +809,21 @@ img {
 
 .buy-button {
   background-color: var(--basic-apple);
+  box-shadow: inset 0 -3px 0 #367315;
+  border-radius: 2px;
+}
+
+.buy-button::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .buy-button:hover {
@@ -809,6 +838,7 @@ img {
   color: var(--basic-blue);
   background-color: var(--white);
   border: 3px solid var(--basic-apple);
+  border-radius: 2px;
 }
 
 .to-bookmark-button:hover {
