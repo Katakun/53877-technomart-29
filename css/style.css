@@ -445,11 +445,11 @@ img {
   margin-bottom: 59px;
 }
 
-.promo-new {
+.new {
   position: relative;
 }
 
-.promo-new::after {
+.new::after {
   content: "NEW";
   position: absolute;
   top: 6px;
@@ -465,7 +465,8 @@ img {
   transform: rotate(45deg);
 
 }
-.promo-new::before {
+
+.new::before {
   content: "";
   position: absolute;
   top: 0;
@@ -479,7 +480,6 @@ img {
     var(--basic-amaranth) 80%,
     transparent 80%);
 }
-
 
 
 .promo-item h3 {
@@ -606,6 +606,7 @@ img {
   position: absolute;
   left: 24px;
 }
+
 .slider-controls button:last-child {
   padding: 0;
   width: 22px;
@@ -635,6 +636,7 @@ img {
   cursor: pointer;
   margin: 0 5px;
 }
+
 .slider-indication button.current {
   background-color: red;
 }
@@ -711,6 +713,16 @@ img {
   border: 1px solid var(--whisper);
   width: 220px;
   height: 318px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-goods-item a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 216px;
 }
 
 .main-goods-item h3 {
@@ -719,6 +731,12 @@ img {
   font-weight: bold;
   color: var(--black);
   font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 0 30px;
+  margin: auto 0 0 0;
+}
+.main-goods-item  img {
+  margin: auto auto 0 auto;
 }
 
 .old-price {
