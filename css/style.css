@@ -690,6 +690,7 @@ img {
   margin-right: 14px;
   width: 192px;
   padding: 10px 0;
+  display: block;
 }
 
 .section-header-catalog {
@@ -914,12 +915,57 @@ img {
 .service-promo {
   display: flex;
   justify-content: space-between;
+  height: 279px;
+  align-items: center;
+  position: relative;
+  margin-top: 45px;
 }
 
-.service-text {
-  background: url(../img/track.png) no-repeat top right;
-  width: 620px;
+.service-promo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 230px;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
 }
+
+
+
+.service-text {
+  width: 620px;
+  height: 100%;
+}
+
+.service-text-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.service-text-list li {
+  height: 100%;
+}
+
+.service-text-list li:first-child {
+  background: url(../img/track.png) no-repeat 100% 50px;
+}
+.service-text-list li:nth-child(2) {
+  background: url(../img/guarantee.png) no-repeat 100% 50px;
+}
+.service-text-list li:last-child {
+  background: url(../img/credit.png) no-repeat 100% 50px;
+}
+
+.service-text-list h3 {
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+
 
 .service p {
   font-size: 13px;
