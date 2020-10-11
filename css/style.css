@@ -97,6 +97,8 @@ img {
   text-align: center;
   border-style: none;
   padding: 10px 46px;
+  display: block;
+  box-sizing: border-box;
 }
 
 /* Верхняя плашка хеддера */
@@ -1005,6 +1007,8 @@ img {
   display: block;
   height: 100%;
   box-shadow: inset 0 -1px 0 var(--hover-bunting), inset 0 1px 0 #405069;
+  padding: 0 0 0 22px;
+  text-align: left;
 }
 
 .service-button-active {
@@ -1030,17 +1034,33 @@ img {
 .about-map {
   width: 300px;
 }
+.about-map button {
+  width: 100%;
+}
+.about-map img {
+  margin: 19px 0 18px 0;
+}
 
 .about-transport {
   width: 460px;
 }
+.about-transport .button {
+  width: 220px;
+  padding: 10px;
+  margin-top: 25px;
+}
+
 
 .about h3 {
   color: var(--black);
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 11px;
 }
 
 .about-transport-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .about-transport-item {
@@ -1049,6 +1069,19 @@ img {
   font-weight: normal;
   color: var(--black);
   font-family: var(--cuprum);
+  position: relative;
+  padding-left: 37px;
+  margin-bottom: 10px;
+}
+
+.about-transport-item::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-amaranth);
 }
 
 /* Футер */
