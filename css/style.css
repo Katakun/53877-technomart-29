@@ -1126,11 +1126,11 @@ img {
 .footer-nav-company {
   list-style: none;
   display: flex;
-  width: 550px;
-  justify-content: flex-end;
+  width: 569px;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
-  margin: 30px 0 0;
+  margin: 37px 0 0;
 }
 
 .footer-nav-company li {
@@ -1154,9 +1154,9 @@ img {
   padding: 0;
   margin: 20px 0 0;
   list-style: none;
-  width: 525px;
+  width: 545px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
