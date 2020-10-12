@@ -26,7 +26,7 @@
   --silver: #c5c5c5;
   --old-lace: #F7F3EC;
   --white: #ffffff;
-  --darkgray: #A9A9A9;
+  --darkgray: #a9a9a9;
   --magnolia: #F3F7F9;
   --rock-blue: #99a1ae;
 
@@ -1249,7 +1249,7 @@ img {
 
 .footer-social address {
   font-style: normal;
-}
+}В свободной форме
 
 .footer-social a {
   color: var(--salomie);
@@ -1261,4 +1261,36 @@ img {
 
 .footer-social a:active {
   color: var(--basic-amaranth);
+}
+
+/* Modal */
+
+.modal {
+  border-top: 7px solid #ff5257;
+}
+
+.modal-write-us-label {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black);
+  font-weight: normal;
+  font-family: var(--cuprum);
+}
+.modal input[type="text"]::placeholder,
+.modal input[type="email"]::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: var(--darkgray);
+}
+.modal input,
+.modal textarea {
+  border: 2px solid var(--silver);
+  border-radius: 2px;
+}
+.modal-write-us-bottom-section {
+  background-color: #f4f4f4;
 }
