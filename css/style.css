@@ -1269,7 +1269,56 @@ img {
 
 .modal {
   border-top: 7px solid #ff5257;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--white);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
+
+.modal-wrapper {
+  width: 460px;
+  margin: auto;
+}
+
+/* Modal write us*/
+
+.modal-write-us {
+  top: 180px;
+  bottom: auto;
+  width: 620px;
+  /*padding: 46px 80px 37px;*/
+}
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 318px;
+}
+.write-us-form p {
+  margin: 0;
+}
+.write-us-form p:last-child {
+  flex-grow: 1;
+}
+.modal-write-us-name,
+.modal-write-us-email {
+  box-sizing: border-box;
+  width: 220px;
+  height: 38px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+.modal-write-us-message {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+}
+
 
 .modal-write-us-label {
   font-size: 18px;
