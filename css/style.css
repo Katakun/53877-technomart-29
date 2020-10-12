@@ -1180,6 +1180,7 @@ img {
 .footer-nav-company a:active,
 .footer-nav-goods a:active {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 /* Футер нижняя часть */
@@ -1249,7 +1250,7 @@ img {
 
 .footer-social address {
   font-style: normal;
-}В свободной форме
+}
 
 .footer-social a {
   color: var(--salomie);
@@ -1261,6 +1262,7 @@ img {
 
 .footer-social a:active {
   color: var(--basic-amaranth);
+  text-decoration: none;
 }
 
 /* Modal */
