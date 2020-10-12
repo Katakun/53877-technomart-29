@@ -30,7 +30,7 @@
   --magnolia: #F3F7F9;
   --rock-blue: #99a1ae;
 
-  --social: linear-gradient(0deg, #212A3A, #212A3A);
+  --social: #212A3A;
   --cuprum: Cuprum, Arial, Helvetica, sans-serif;
 }
 
@@ -1198,9 +1198,13 @@ img {
   align-items: center;
   height: 107px;
 }
+.footer-social p:first-of-type {
+  margin-right: 145px;
+}
 
 .footer-social-flex p {
   margin: 0;
+  width: 230px;
 }
 
 .footer-social-flex ul {
@@ -1214,14 +1218,21 @@ img {
 
 .footer-social-flex address {
   width: 160px;
+  margin-left: 115px;
 }
 
 .footer-social-flex p:last-child {
-  width: 140px;
+  width: 111px;
 }
 
 .social-icon {
   background-color: var(--social);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .social-icon:hover {
