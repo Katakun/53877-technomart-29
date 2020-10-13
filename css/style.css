@@ -1285,6 +1285,11 @@ img {
   margin: auto;
 }
 
+.write-us-form.modal-wrapper {
+  padding-top: 46px;
+}
+
+
 /* Modal write us*/
 
 .modal-write-us {
@@ -1317,6 +1322,7 @@ img {
   box-sizing: border-box;
   width: 100%;
   margin-top: 10px;
+  padding: 5px 10px;
 }
 
 
@@ -1344,4 +1350,18 @@ textarea::placeholder {
 }
 .modal-write-us-bottom-section {
   background-color: #f4f4f4;
+  height: 112px;
+  display: flex;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 11px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  border: 0;
+  cursor: pointer;
 }
