@@ -1296,7 +1296,6 @@ img {
   top: 180px;
   bottom: auto;
   width: 620px;
-  /*padding: 46px 80px 37px;*/
 }
 .write-us-form {
   display: flex;
@@ -1364,4 +1363,15 @@ textarea::placeholder {
   background-image: url("../img/icon-close.svg");
   border: 0;
   cursor: pointer;
+}
+
+/* modal-map */
+.modal-map {
+  top: 180px;
+  bottom: auto;
+  width: 943px;
+  height: 449px;
+}
+.modal-map img {
+  display: block;
 }
