@@ -105,9 +105,32 @@
   </div>
 
   <!--Фильтр товаров-->
-  <section>
-    <h2>Фильтр товаров</h2>
-    <!-- Здесь будет форма фильтра -->
+  <section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+
+    <div class="head-bar">
+      <h2>Фильтр:</h2>
+    </div>
+
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricerange.value">
+      <fieldset>
+        <legend>Цена:</legend>
+        <input type="range" id="catalog-price" name="pricerange" min="1" max="30000" step="1" value="0">
+        <output name="priceoutput">0</output>
+      </fieldset>
+
+      <fieldset>
+        <legend>Производители:</legend>
+        <ul>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+            <label for="filter-baxter-of-california">Bosh</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+
+
   </section>
 
   <!--Сортировка-->
@@ -271,7 +294,7 @@
     </ul>
   </section>
 
-<!--Пагинация-->
+  <!--Пагинация-->
   <ul>
     <li>
       <a>1</a>
