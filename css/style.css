@@ -667,14 +667,6 @@ img {
   gap: 20px;
 }
 
-.main-goods-bar {
-  background-color: var(--linen);
-  display: flex;
-  justify-content: space-between;
-  height: 89px;
-  margin-bottom: 20px;
-}
-
 .section-header {
   font-size: 30px;
   line-height: 30px;
@@ -695,7 +687,7 @@ img {
   display: block;
 }
 
-.section-header-catalog {
+.catalog-section-bgcolor {
   background-color: var(--alice-blue-catalog);
 }
 
@@ -709,6 +701,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .main-goods-item {
@@ -864,14 +857,16 @@ img {
 
 /* Популярные производители */
 
-
-.main-brands-bar {
-  background-color: var(--linen);
+.main-section-bar {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   height: 89px;
   margin-bottom: 20px;
+}
+
+.index-section-bgcolor {
+  background-color: var(--linen);
 }
 
 .main-brands-list {
@@ -1375,3 +1370,4 @@ textarea::placeholder {
 .modal-map img {
   display: block;
 }
+
