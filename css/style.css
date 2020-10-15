@@ -1413,3 +1413,16 @@ textarea::placeholder {
 .filter-input:active + label {
   opacity: 0.4;
 }
+
+/* Pagination */
+.pagination-list {
+  list-style: none;
+}
+.pagination-item a {
+  color: var(--black);
+  background-color: var(--white);
+}
+.pagination-item-current a {
+  color: var(--white);
+  background-color: var(--basic-amaranth);
+}
