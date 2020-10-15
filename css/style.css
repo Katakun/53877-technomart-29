@@ -667,7 +667,7 @@ img {
   gap: 20px;
 }
 
-.section-header {
+.page-title {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-blue);
@@ -1371,3 +1371,45 @@ textarea::placeholder {
   display: block;
 }
 
+/* Каталог */
+
+/* Фильтр */
+
+.head-bar h2 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.filter label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: normal;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: var(--black);
+  text-transform: uppercase;
+}
+.filter ul {
+  list-style: none;
+}
+.filter-input:active + label {
+  opacity: 0.4;
+}
