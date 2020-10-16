@@ -702,7 +702,33 @@ img {
   margin: 0;
   padding: 0;
   grid-column: 1 / -1;
-
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.bread-crumbs a {
+  color: var(--black);
+}
+.bread-crumbs li {
+  position: relative;
+  margin-right: 40px;
+}
+.bread-crumbs li::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 3px;
+  right: -24px;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.bread-crumbs li:last-child {
+  margin-right: 0;
+}
+.bread-crumbs-current::after {
+  display: none;
 }
 
 .catalog-item {
