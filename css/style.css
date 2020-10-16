@@ -705,7 +705,7 @@ img {
 
 }
 
-.main-goods-item {
+.catalog-item {
   box-sizing: border-box;
   border: 1px solid var(--whisper);
   width: 220px;
@@ -715,30 +715,32 @@ img {
   position: relative;
 }
 
-.main-goods-item:hover {
+.catalog-item:hover {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 }
-.main-goods-item:hover img {
+
+.catalog-item:hover img {
   display: none;
 
 }
-.main-goods-item:hover .buy-button {
+
+.catalog-item:hover .buy-button {
   display: block;
 }
-.main-goods-item:hover .to-bookmark-button {
+
+.catalog-item:hover .to-bookmark-button {
   display: block;
 }
 
 
-
-.main-goods-item a {
+.catalog-item a {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   height: 216px;
 }
 
-.main-goods-item h3 {
+.catalog-item h3 {
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -749,11 +751,11 @@ img {
   margin: auto 0 0 0;
 }
 
-.main-goods-item img {
+.catalog-item img {
   margin: auto auto 0 auto;
 }
 
-.main-goods-item p {
+.catalog-item p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -762,11 +764,11 @@ img {
   justify-content: flex-end;
 }
 
-.main-goods-item del {
+.catalog-item del {
   margin-bottom: 13px;
 }
 
-.main-goods-item button {
+.catalog-item button {
   margin-bottom: 21px;
   padding: 10px 0;
   width: 141px;
@@ -793,9 +795,8 @@ img {
   background-color: var(--basic-amaranth);
   border-style: none;
   border-radius: 3px;
-  background-image:
-    linear-gradient(225deg, var(--white) 11%, transparent 11%),
-    linear-gradient(315deg, var(--white) 11%, transparent 11%);
+  background-image: linear-gradient(225deg, var(--white) 11%, transparent 11%),
+  linear-gradient(315deg, var(--white) 11%, transparent 11%);
 }
 
 .price-button:hover {
@@ -890,9 +891,11 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .main-brands-item:hover {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
+
 .main-brands-item:active img {
   opacity: 0.5;
 }
@@ -932,7 +935,6 @@ img {
 }
 
 
-
 .service-text {
   width: 620px;
   height: 100%;
@@ -952,9 +954,11 @@ img {
 .service-text-list li:first-child {
   background: url(../img/track.png) no-repeat 100% 50px;
 }
+
 .service-text-list li:nth-child(2) {
   background: url(../img/guarantee.png) no-repeat 100% 50px;
 }
+
 .service-text-list li:last-child {
   background: url(../img/credit.png) no-repeat 100% 50px;
 }
@@ -963,7 +967,6 @@ img {
   padding: 50px 0 0 0;
   margin: 0;
 }
-
 
 
 .service p {
@@ -1019,7 +1022,6 @@ img {
 }
 
 
-
 /* О компании */
 
 .about {
@@ -1031,9 +1033,11 @@ img {
 .about-map {
   width: 300px;
 }
+
 .about-map button {
   width: 100%;
 }
+
 .about-map img {
   margin: 19px 0 18px 0;
 }
@@ -1041,6 +1045,7 @@ img {
 .about-transport {
   width: 460px;
 }
+
 .about-transport .button {
   width: 220px;
   padding: 10px;
@@ -1196,6 +1201,7 @@ img {
   align-items: center;
   height: 107px;
 }
+
 .footer-social p:first-of-type {
   margin-right: 145px;
 }
@@ -1294,18 +1300,22 @@ img {
   bottom: auto;
   width: 620px;
 }
+
 .write-us-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 318px;
 }
+
 .write-us-form p {
   margin: 0;
 }
+
 .write-us-form p:last-child {
   flex-grow: 1;
 }
+
 .modal-write-us-name,
 .modal-write-us-email {
   box-sizing: border-box;
@@ -1314,6 +1324,7 @@ img {
   padding: 5px 10px;
   margin-top: 10px;
 }
+
 .modal-write-us-message {
   box-sizing: border-box;
   width: 100%;
@@ -1329,6 +1340,7 @@ img {
   font-weight: normal;
   font-family: var(--cuprum);
 }
+
 .modal input[type="text"]::placeholder,
 .modal input[type="email"]::placeholder,
 textarea::placeholder {
@@ -1339,11 +1351,13 @@ textarea::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   color: var(--darkgray);
 }
+
 .modal input,
 .modal textarea {
   border: 2px solid var(--silver);
   border-radius: 2px;
 }
+
 .modal-write-us-bottom-section {
   background-color: #f4f4f4;
   height: 112px;
@@ -1369,6 +1383,7 @@ textarea::placeholder {
   width: 943px;
   height: 449px;
 }
+
 .modal-map img {
   display: block;
 }
@@ -1384,6 +1399,21 @@ textarea::placeholder {
 
 /* Фильтр */
 
+.filter {
+  width: 220px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-top: 10px;
+}
+.filter fieldset:not(:last-of-type) {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+
 .head-bar h2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1392,6 +1422,7 @@ textarea::placeholder {
   color: var(--black);
   text-transform: uppercase;
 }
+
 .filter legend {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
@@ -1400,6 +1431,7 @@ textarea::placeholder {
   color: var(--black);
   text-transform: uppercase;
 }
+
 .filter label {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
@@ -1408,6 +1440,7 @@ textarea::placeholder {
   color: var(--black);
   text-transform: uppercase;
 }
+
 .filter-button {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1416,21 +1449,34 @@ textarea::placeholder {
   color: var(--black);
   text-transform: uppercase;
 }
+
 .filter ul {
   list-style: none;
 }
+
 .filter-input:active + label {
   opacity: 0.4;
 }
+
+/* Catalog */
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0;
+}
+
 
 /* Pagination */
 .pagination-list {
   list-style: none;
 }
+
 .pagination-item a {
   color: var(--black);
   background-color: var(--white);
 }
+
 .pagination-item-current a {
   color: var(--white);
   background-color: var(--basic-amaranth);
@@ -1440,7 +1486,8 @@ textarea::placeholder {
 .catalog-article {
   grid-column: 1 / -1;
 }
-.catalog-article h2{
+
+.catalog-article h2 {
   font-family: var(--cuprum);
   font-size: 30px;
   line-height: 30px;
