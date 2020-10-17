@@ -1551,16 +1551,27 @@ textarea::placeholder {
 /* Pagination */
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-item a {
   color: var(--black);
   background-color: var(--white);
+  display: block;
+  padding: 6px 14px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
 }
 
 .pagination-item-current a {
   color: var(--white);
   background-color: var(--basic-amaranth);
+}
+.pagination-item {
+  margin-right: 10px;
 }
 
 /*Article*/
