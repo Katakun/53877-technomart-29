@@ -1563,15 +1563,29 @@ textarea::placeholder {
   display: block;
   padding: 6px 14px;
   border: 1px solid #E5E5E5;
-  box-sizing: border-box;
+  border-radius: 2px;
+}
+.pagination-item:not(.pagination-item-current) a:hover {
+  border: 1px solid var(--silver);
+}
+.pagination-item:not(.pagination-item-current) a:active {
+  border: 1px solid var(--basic-amaranth);
+}
+
+.pagination-item:last-child a {
+  padding: 6px 37px;
 }
 
 .pagination-item-current a {
   color: var(--white);
   background-color: var(--basic-amaranth);
+  border: 1px solid var(--basic-amaranth);
 }
 .pagination-item {
   margin-right: 10px;
+}
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 /*Article*/
