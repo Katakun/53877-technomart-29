@@ -127,23 +127,22 @@
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
-              <div class="bar"></div>
+              <div class="bar" style="width: 60%; margin-left: 20%"></div>
             </div>
-            <div class="toggle toggle-min"></div>
-            <div class="toggle toggle-max"></div>
+            <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 70%"></div>
           </div>
           <div class="price-controls">
-            <label class="min-price">
-              от <input type="number" name="min-price" value="0">
-            </label>
-            <label class="max-price">
-              до <input type="number" name="max-price" value="15000">
-            </label>
+            <label class="min-price visually-hidden" for="min-price">от</label>
+            <input type="text" name="min-price" id="min-price" value="0">
+            <span>—</span>
+            <label class="max-price visually-hidden" for="max-price">до</label>
+            <input type="text" name="max-price" id="max-price" value="15000">
           </div>
         </div>
 
-<!--        <input type="range" id="catalog-price" name="pricerange" min="1" max="30000" step="1" value="0">-->
-<!--        <output name="priceoutput">0</output>-->
+        <!--        <input type="range" id="catalog-price" name="pricerange" min="1" max="30000" step="1" value="0">-->
+        <!--        <output name="priceoutput">0</output>-->
 
       </fieldset>
 

@@ -1460,6 +1460,7 @@ textarea::placeholder {
 .range-filter {
   width: 220px;
   margin-top: 10px;
+  margin-bottom: 25px;
 }
 .range-controls {
   position: relative;
@@ -1500,6 +1501,32 @@ textarea::placeholder {
 .range-controls .toggle-max {
   left: 140px;
 }
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-controls input {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--black);
+  width: 95px;
+  height: 38px;
+  padding: 10px 0;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  background: var(--old-lace);
+  box-sizing: border-box;
+}
+.price-controls span {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+}
+
 
 /*TODO убрать подчеркивание при визитет*/
 .filter legend {
