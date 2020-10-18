@@ -1575,6 +1575,10 @@ textarea::placeholder {
   cursor: pointer;
   height: 18px;
 }
+.sort .sort-button {
+  opacity: 0.3;
+  border-bottom: 1px dotted var(--basic-amaranth);
+}
 .sort button:last-child {
   margin-left: 21px;
 }
@@ -1588,11 +1592,21 @@ textarea::placeholder {
 .sort button:nth-of-type(2) {
   margin-left: 70px;
 }
-.sort-current {
+.sort .sort-current {
   color: var(--basic-amaranth);
+  opacity: 1;
+  border: none;
 }
 .sort-current svg path{
   fill: var(--basic-amaranth);
+}
+.sort-button:hover:not(.sort-current) {
+  opacity: 1;
+  border-bottom: 1px solid var(--basic-amaranth);
+}
+.sort-arrow-up:hover:not(.sort-current) svg path,
+.sort-arrow-down:hover:not(.sort-current) svg path {
+  fill: var(--black);
 }
 
 
