@@ -1447,7 +1447,6 @@ textarea::placeholder {
   border-bottom: 1px solid #E5E5E5;
 }
 
-
 .head-bar h2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1455,6 +1454,51 @@ textarea::placeholder {
   font-weight: normal;
   color: var(--black);
   text-transform: uppercase;
+}
+
+/*Рейндж-фильтр*/
+.range-filter {
+  width: 220px;
+  margin-top: 10px;
+}
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  background-color: var(--old-lace);
+  border-radius: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: #D7DCDE;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 0 0 #e0ddd9;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+.range-controls .toggle-max {
+  left: 140px;
 }
 
 /*TODO убрать подчеркивание при визитет*/
@@ -1549,6 +1593,7 @@ textarea::placeholder {
   border-radius: 50%;
 }
 
+/*TODO добавить блокам бордер-радиус*/
 /*Sort*/
 .sort {
   text-transform: uppercase;
@@ -1560,6 +1605,7 @@ textarea::placeholder {
   background-color: var(--old-lace);
   padding: 0 17px 0 20px;
   align-items: center;
+  border-radius: 3px;
 }
 .sort h2 {
   font-size: inherit;
