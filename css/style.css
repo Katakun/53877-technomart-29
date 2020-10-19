@@ -276,7 +276,9 @@ img {
   background-color: var(--basic-apple);
   color: rgba(255, 255, 255, 0.5);
 }
-
+.main-topbar-active {
+  background-color: var(--basic-amaranth);
+}
 
 /* Средняя плашка хеддера  */
 
