@@ -395,6 +395,49 @@ img {
 .registration:active {
   color: var(--silver)
 }
+.user-id {
+  font-family: var(--cuprum);
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+}
+.user-login-menu .authorisation {
+  background-color: var(--white);
+  box-sizing: border-box;
+  position: relative;
+  height: 45px;
+  width: 299px;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 13px 17px 0 15px;
+  margin-top: 0;
+}
+.user-id svg {
+  margin-right: 21px;
+}
+.user-login-menu {
+  flex-direction: column;
+}
+.user-link {
+  margin: 0;
+  text-align: center;
+  font-family: var(--cuprum);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+.user-link a {
+  color: var(--basic-blue);
+}
+.separator {
+  padding: 0;
+  margin: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--basic-blue);
+}
 
 /* Навигация в хеддере */
 
