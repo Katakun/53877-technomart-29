@@ -21,8 +21,8 @@
   --de-york: #8ED78F;
   --linen: #F9F5F0;
   --whisper: #EAEAEA;
-  --alice-blue: #F1F5F7;
-  --alice-blue-catalog: #F2F6F8;
+  --alice-blue: #f1f5f7;
+  --alice-blue-catalog: #f2f6f8;
   --silver: #c5c5c5;
   --old-lace: #F7F3EC;
   --white: #ffffff;
@@ -1739,7 +1739,11 @@ textarea::placeholder {
 
 /*Article*/
 .catalog-article {
-  grid-column: 1 / -1;
+  height: 261px;
+  background-color: var(--alice-blue);
+  padding-top: 64px;
+  box-sizing: border-box;
+  margin-top: 59px;
 }
 
 .catalog-article h2 {
@@ -1749,6 +1753,10 @@ textarea::placeholder {
   font-weight: normal;
   color: var(--black);
   text-transform: uppercase;
+  margin: 0;
+}
+.catalog-article p {
+  margin-top: 25px;
 }
 
 
