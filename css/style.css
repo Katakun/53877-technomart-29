@@ -1435,18 +1435,15 @@ textarea::placeholder {
 .filter {
   width: 220px;
 }
-
 .filter fieldset {
   padding: 0;
   margin: 0;
   border: none;
   margin-top: 10px;
 }
-
 .filter fieldset:not(:last-of-type) {
   border-bottom: 1px solid #E5E5E5;
 }
-
 .head-bar h2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1548,13 +1545,23 @@ textarea::placeholder {
   padding: 10px 0;
 }
 
-.filter-button {
+.filter button {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
   color: var(--black);
   text-transform: uppercase;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid #E5E5E5;
+  cursor: pointer;
+}
+.filter button:hover {
+  border: 1px solid var(--silver);
+}
+.filter button:active {
+  border: 1px solid var(--basic-amaranth);
 }
 
 .filter ul {
@@ -1622,7 +1629,7 @@ textarea::placeholder {
 
 /*TODO добавить блокам бордер-радиус*/
 /*Sort*/
-.sort {
+.head-bar {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1634,12 +1641,12 @@ textarea::placeholder {
   align-items: center;
   border-radius: 3px;
 }
-.sort h2 {
+.head-bar h2 {
   font-size: inherit;
   font-weight: inherit;
   flex-grow: 1;
 }
-.sort button {
+.head-bar button {
   line-height: inherit;
   text-transform: inherit;
   border: none;
@@ -1648,24 +1655,24 @@ textarea::placeholder {
   cursor: pointer;
   height: 18px;
 }
-.sort .sort-button {
+.head-bar .sort-button {
   opacity: 0.3;
   border-bottom: 1px dotted var(--basic-amaranth);
 }
-.sort button:last-child {
+.head-bar button:last-child {
   margin-left: 21px;
 }
-.sort button:nth-of-type(4) {
+.head-bar button:nth-of-type(4) {
   margin-left: 46px;
   transform: rotate(180deg);
 }
-.sort button:nth-of-type(3) {
+.head-bar button:nth-of-type(3) {
   margin-left: 65px;
 }
-.sort button:nth-of-type(2) {
+.head-bar button:nth-of-type(2) {
   margin-left: 70px;
 }
-.sort .sort-current {
+.head-bar .sort-current {
   color: var(--basic-amaranth);
   opacity: 1;
   border: none;
