@@ -276,6 +276,7 @@ img {
   background-color: var(--basic-apple);
   color: rgba(255, 255, 255, 0.5);
 }
+
 .main-topbar-active {
   background-color: var(--basic-amaranth);
 }
@@ -346,7 +347,7 @@ img {
   margin-top: 5px;
 }
 
-.main-middlebar div {
+.main-middlebar > div {
   margin-top: 46px;
   display: flex;
 }
@@ -378,23 +379,40 @@ img {
   padding-left: 45px;
 }
 
-.login:hover svg path {
+.login:hover svg path,
+.user-id:hover svg path,
+.user-exit:hover svg path {
   fill: var(--chambray);
 }
 
-.login:active svg path {
+.login:active svg path,
+.user-id:active svg path,
+.user-exit:active svg path {
   fill: var(--silver);
 }
 
 .login:hover,
-.registration:hover {
+.registration:hover,
+.user-link a:hover {
   color: var(--basic-amaranth)
 }
 
 .login:active,
-.registration:active {
+.registration:active,
+.user-id:active,
+.user-link a:active,
+.user-link div:active {
   color: var(--silver)
 }
+/*TODO по стайлгайду, но без подсветки логичнее*/
+.user-link:hover .separator {
+  background-color: var(--basic-amaranth)
+}
+.user-link:active .separator {
+  background-color: var(--silver)
+}
+
+
 .user-id {
   font-family: var(--cuprum);
   font-weight: normal;
@@ -402,6 +420,7 @@ img {
   line-height: 21px;
   color: var(--black);
 }
+
 .user-login-menu .authorisation {
   background-color: var(--white);
   box-sizing: border-box;
@@ -413,12 +432,15 @@ img {
   padding: 13px 17px 0 15px;
   margin-top: 0;
 }
+
 .user-id svg {
   margin-right: 21px;
 }
+
 .user-login-menu {
   flex-direction: column;
 }
+
 .user-link {
   margin: 0;
   text-align: center;
@@ -426,10 +448,17 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  display: flex;
+  margin-top: 7px;
+  justify-content: space-between;
+  padding: 0 45px 0 45px;
+  align-items: center;
 }
+
 .user-link a {
   color: var(--basic-blue);
 }
+
 .separator {
   padding: 0;
   margin: 0;
@@ -1480,15 +1509,18 @@ textarea::placeholder {
 .filter {
   width: 220px;
 }
+
 .filter fieldset {
   padding: 0;
   margin: 0;
   border: none;
   margin-top: 10px;
 }
+
 .filter fieldset:not(:last-of-type) {
   border-bottom: 1px solid #E5E5E5;
 }
+
 .head-bar h2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1504,6 +1536,7 @@ textarea::placeholder {
   margin-top: 10px;
   margin-bottom: 25px;
 }
+
 .range-controls {
   position: relative;
   height: 41px;
@@ -1514,15 +1547,18 @@ textarea::placeholder {
   padding-right: 20px;
   padding-left: 20px;
 }
+
 .range-controls .scale {
   height: 2px;
   background: #D7DCDE;
 }
+
 .range-controls .bar {
   width: 70%;
   height: 2px;
   background: #00ca74;
 }
+
 .range-controls .toggle {
   position: absolute;
   top: 30px;
@@ -1537,17 +1573,21 @@ textarea::placeholder {
   box-shadow: 0 2px 0 0 #e0ddd9;
   cursor: pointer;
 }
+
 .range-controls .toggle-min {
   left: 18px;
 }
+
 .range-controls .toggle-max {
   left: 140px;
 }
+
 .price-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .price-controls input {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
@@ -1562,6 +1602,7 @@ textarea::placeholder {
   background: var(--old-lace);
   box-sizing: border-box;
 }
+
 .price-controls span {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
@@ -1602,9 +1643,11 @@ textarea::placeholder {
   border: 1px solid #E5E5E5;
   cursor: pointer;
 }
+
 .filter button:hover {
   border: 1px solid var(--silver);
 }
+
 .filter button:active {
   border: 1px solid var(--basic-amaranth);
 }
@@ -1686,11 +1729,13 @@ textarea::placeholder {
   align-items: center;
   border-radius: 3px;
 }
+
 .head-bar h2 {
   font-size: inherit;
   font-weight: inherit;
   flex-grow: 1;
 }
+
 .head-bar button {
   line-height: inherit;
   text-transform: inherit;
@@ -1700,35 +1745,44 @@ textarea::placeholder {
   cursor: pointer;
   height: 18px;
 }
+
 .head-bar .sort-button {
   opacity: 0.3;
   border-bottom: 1px dotted var(--basic-amaranth);
 }
+
 .head-bar button:last-child {
   margin-left: 21px;
 }
+
 .head-bar button:nth-of-type(4) {
   margin-left: 46px;
   transform: rotate(180deg);
 }
+
 .head-bar button:nth-of-type(3) {
   margin-left: 65px;
 }
+
 .head-bar button:nth-of-type(2) {
   margin-left: 70px;
 }
+
 .head-bar .sort-current {
   color: var(--basic-amaranth);
   opacity: 1;
   border: none;
 }
-.sort-current svg path{
+
+.sort-current svg path {
   fill: var(--basic-amaranth);
 }
+
 .sort-button:hover:not(.sort-current) {
   opacity: 1;
   border-bottom: 1px solid var(--basic-amaranth);
 }
+
 .sort-arrow-up:hover:not(.sort-current) svg path,
 .sort-arrow-down:hover:not(.sort-current) svg path {
   fill: var(--black);
@@ -1807,6 +1861,7 @@ textarea::placeholder {
   text-transform: uppercase;
   margin: 0;
 }
+
 .catalog-article p {
   margin-top: 25px;
 }
