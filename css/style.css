@@ -178,7 +178,7 @@ img {
 .main-topbar-search svg {
   opacity: 0.3;
   margin-left: 17px;
-  margin-top: 10px;
+  margin-top: 12px;
   position: absolute;
 }
 
@@ -215,7 +215,7 @@ img {
   color: var(--white);
 }
 
-
+/*TODO фон по клику*/
 .main-topbar-user-menu {
   margin-left: auto;
   display: flex;
@@ -232,7 +232,7 @@ img {
   content: "";
   position: absolute;
   top: 13px;
-  left: 0;
+  left: 16px;
   width: 16px;
   height: 18px;
   background-image: url("../img/icon-bookmark.svg");
@@ -245,7 +245,7 @@ img {
   content: "";
   position: absolute;
   top: 13px;
-  left: 0;
+  left: 12px;
   width: 16px;
   height: 18px;
   background-image: url("../img/icon-cart.svg");
@@ -264,9 +264,20 @@ img {
   opacity: 0.3;
 }
 
-.main-topbar-order {
+.main-topbar-user-menu .main-topbar-order {
   background-color: var(--basic-apple);
+  padding-left: 20px;
+  padding-right: 17px;
 }
+.main-topbar-user-menu .main-topbar-cart {
+  padding-left: 34px;
+  padding-right: 21px;
+}
+.main-topbar-user-menu .main-topbar-bookmark {
+  padding-right: 39px;
+  padding-left: 39px;
+}
+
 
 .main-topbar-order:hover {
   background-color: var(--hover-kelly-green);
@@ -292,12 +303,12 @@ img {
 
 .main-middlebar > p {
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
   color: var(--basic-amaranth);
   font-weight: normal;
   font-family: var(--cuprum);
   font-style: italic;
-  margin-top: 38px;
+  margin-top: 42px;
   margin-left: 30px;
 }
 
