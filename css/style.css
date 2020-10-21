@@ -224,7 +224,8 @@ img {
 
 .main-topbar-user-menu a {
   display: block;
-  padding: 9px 23px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   position: relative;
 }
 
@@ -264,18 +265,24 @@ img {
   opacity: 0.3;
 }
 
+/*TODO вместо width сделать по-другому
+   от переполнения чтобы расширялось*/
 .main-topbar-user-menu .main-topbar-order {
   background-color: var(--basic-apple);
-  padding-left: 20px;
-  padding-right: 17px;
+  text-align: center;
+  padding-left: 2px;
+  width: 148px;
 }
 .main-topbar-user-menu .main-topbar-cart {
-  padding-left: 34px;
-  padding-right: 21px;
+  padding-left: 8px;
+  width: 136px;
+  text-align: center;
+  box-sizing: border-box;
 }
 .main-topbar-user-menu .main-topbar-bookmark {
-  padding-right: 39px;
+  padding-top: 9px;
   padding-left: 39px;
+  padding-right: 38px;
 }
 
 
@@ -296,7 +303,7 @@ img {
 
 .main-middlebar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 940px;
   height: 158px;
 }
@@ -317,6 +324,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 91px;
 }
 
 .main-middlebar-address a {
@@ -361,8 +369,12 @@ img {
 .main-middlebar > div {
   margin-top: 46px;
   display: flex;
+  margin-left: auto;
 }
-
+.user-login-menu {
+  flex-direction: column;
+  margin-left: auto;
+}
 
 .login,
 .registration {
@@ -388,6 +400,7 @@ img {
 .login {
   margin-right: 10px;
   padding-left: 45px;
+  padding-right: 28px;
 }
 
 .login:hover svg path,
@@ -430,27 +443,26 @@ img {
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
+  margin-right: 15px;
 }
+
 
 .user-login-menu .authorisation {
   background-color: var(--white);
   box-sizing: border-box;
   position: relative;
   height: 45px;
-  width: 299px;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 13px 17px 0 15px;
+  /*width: 299px;*/
+  padding: 12px 17px 0 15px;
   margin-top: 0;
 }
 
-.user-id svg {
-  margin-right: 21px;
+.user-id > svg:nth-child(1) {
+  margin-right: 16px;
 }
 
-.user-login-menu {
-  flex-direction: column;
-}
+
+
 
 .user-link {
   margin: 0;
