@@ -107,10 +107,7 @@ img {
   background-color: var(--hover-bunting);
 }
 
-.container {
-  width: 940px;
-  margin: 0 auto;
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -307,7 +304,6 @@ img {
 .main-middlebar {
   display: flex;
   justify-content: flex-start;
-  width: 940px;
   height: 158px;
 }
 
@@ -1929,6 +1925,11 @@ textarea::placeholder {
   margin-top: 25px;
 }
 
-
+.container {
+  width: 940px;
+  margin: 0 auto;
+  /*padding: 0 10px 0;*/
+  box-sizing: border-box;
+}
 
 
