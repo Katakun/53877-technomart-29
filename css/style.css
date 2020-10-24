@@ -108,7 +108,6 @@ img {
 }
 
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -271,6 +270,7 @@ img {
   padding-left: 2px;
   width: 148px;
 }
+
 .main-topbar-user-menu .main-topbar-cart {
   padding-left: 35px;
   padding-right: 5px;
@@ -278,6 +278,7 @@ img {
   box-sizing: border-box;
 
 }
+
 .main-topbar-user-menu .main-topbar-bookmark {
   padding-top: 9px;
   padding-left: 39px;
@@ -370,6 +371,7 @@ img {
   display: flex;
   margin-left: auto;
 }
+
 .user-login-menu {
   flex-direction: column;
   margin-left: auto;
@@ -427,10 +429,12 @@ img {
 .user-link div:active {
   color: var(--silver)
 }
+
 /*TODO по стайлгайду, но без подсветки логичнее*/
 .user-link:hover .separator {
   background-color: var(--basic-amaranth)
 }
+
 .user-link:active .separator {
   background-color: var(--silver)
 }
@@ -492,6 +496,7 @@ img {
 .user-link li {
   position: relative;
 }
+
 .user-link a {
   color: var(--basic-blue);
 }
@@ -508,15 +513,12 @@ img {
 }
 
 .user-exit {
-  height: 45px;
+  height: 18px;
+  width: 20px;
   display: inline-block;
-  margin-top: 0px;
-  width: 45px;
-  text-align: left;
-}
-.user-exit > svg:nth-last-child(1) {
+  margin-left: 7px;
   padding-top: 14px;
-  padding-left: 8px;
+  padding-right: 18px;
 }
 
 .separator {
@@ -586,38 +588,27 @@ img {
   position: relative;
 }
 
-.new::after {
+.new::before {
   content: "NEW";
   position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 67px;
-  height: 67px;
+  top: 7px;
+  right: -26px;
+  width: 100px;
+  padding: 3px 0 3px 0;
   font-family: var(--cuprum);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   text-align: center;
   color: var(--white);
+  background-color: var(--basic-amaranth);
   transform: rotate(45deg);
-
 }
 
-.new::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 67px;
-  height: 67px;
-  background-image: linear-gradient(
-    45deg,
-    transparent 50%,
-    var(--basic-amaranth) 50%,
-    var(--basic-amaranth) 80%,
-    transparent 80%);
-}
 
+.promo-item {
+  overflow: hidden;
+}
 
 .promo-item h3 {
   font-size: 24px;
@@ -655,7 +646,7 @@ img {
   display: block;
   width: 135px;
   padding: 10px 0;
-  margin-left: 23px;
+  margin-left: 22px;
   margin-top: 14px;
 }
 
@@ -678,9 +669,11 @@ img {
 .promo-slider-list {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .slide-item {
+  display: none;
   background-color: #787372;
   height: 266px;
 }
@@ -720,10 +713,6 @@ img {
   display: none;
 }
 
-.slide-current {
-  display: block;
-}
-
 .slider-controls {
   display: block;
   position: absolute;
@@ -754,13 +743,13 @@ img {
   background-image: url("../img/icon-left.svg");
   transform: rotate(180deg);
   position: absolute;
-  right: 24px;
+  right: 20px;
 }
 
 .slider-indication {
   position: absolute;
-  left: 295px;
-  bottom: 36px;
+  left: 296px;
+  bottom: 34px;
 }
 
 .slider-indication button {
@@ -771,7 +760,7 @@ img {
   border: 2px solid white;
   border-radius: 50%;
   cursor: pointer;
-  margin: 0 5px;
+  margin-right: 6px;
 }
 
 .slider-indication button.current {
@@ -870,15 +859,16 @@ img {
 .bread-crumbs-current::after {
   display: none;
 }
-
+/*TODO бордер 1 пкс*/
 .catalog-item {
   box-sizing: border-box;
-  border: 1px solid var(--whisper);
+  outline: 1px solid var(--whisper);
   width: 220px;
   height: 318px;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .catalog-item:hover {
@@ -901,9 +891,9 @@ img {
 
 .catalog-item a {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  height: 216px;
+  height: 218px;
 }
 
 .catalog-item h3 {
@@ -913,8 +903,9 @@ img {
   color: var(--black);
   font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 20px;
   margin: auto 0 0 0;
+  order: 1;
 }
 
 .catalog-item img {
@@ -934,11 +925,11 @@ img {
   margin-bottom: 13px;
 }
 
-.catalog-item button {
-  margin-bottom: 21px;
-  padding: 10px 0;
-  width: 141px;
-}
+/*.catalog-item button {*/
+/*  margin-bottom: 20px;*/
+/*  padding: 10px 0;*/
+/*  width: 141px;*/
+/*}*/
 
 
 .old-price {
@@ -952,6 +943,9 @@ img {
 }
 
 .price-button {
+  margin: 0 0 21px 15px;
+  padding: 10px 13px 10px 0;
+  min-width: 140px;
   font-size: 17px;
   line-height: 18px;
   color: var(--white);
@@ -1025,12 +1019,16 @@ img {
 
 /* Популярные производители */
 
+.pop-brands-bar .section-button {
+  margin-right: 18.5px;
+}
+
 .main-section-bar {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   height: 89px;
-  margin-bottom: 20px;
+  margin: 59px 0 20px 0;
   grid-column: 1 / -1;
 }
 
@@ -1050,12 +1048,13 @@ img {
 .main-brands-item {
   box-sizing: border-box;
   background-color: var(--white);
-  border: 1px solid #EAEAEA;
+  outline: 1px solid #EAEAEA;
   width: 220px;
   height: 145px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2px;
 }
 
 .main-brands-item:hover {
@@ -1071,7 +1070,7 @@ img {
 .service {
   background-color: var(--alice-blue);
   height: 522px;
-  padding-top: 64px;
+  padding-top: 61px;
 }
 
 .service h2 {
@@ -1086,7 +1085,7 @@ img {
   height: 279px;
   align-items: center;
   position: relative;
-  margin-top: 45px;
+  margin-top: 25px;
 }
 
 .service-promo::before {
@@ -1113,8 +1112,9 @@ img {
   height: 100%;
 }
 
-.service-text-list li {
+.service-text-item {
   height: 100%;
+  display: none;
 }
 
 .service-text-list li:first-child {
@@ -1130,8 +1130,8 @@ img {
 }
 
 .service-text-list h3 {
-  padding: 50px 0 0 0;
-  margin: 0;
+  padding: 45px 0 0 0;
+  margin: 0 0 28px;
 }
 
 
@@ -1141,7 +1141,7 @@ img {
   color: var(--black);
   font-weight: normal;
   font-family: "PT Sans", Arial, sans-serif;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 .service-list {
@@ -1161,7 +1161,6 @@ img {
   height: 185px;
 }
 
-/*TODO починить верстку кнопок, на сафари слипается фон*/
 .service-button {
   font-size: 21px;
   line-height: 30px;
@@ -1173,7 +1172,7 @@ img {
   width: 240px;
   display: block;
   box-shadow: inset 0 -1px 0 var(--hover-bunting), inset 0 1px 0 #405069;
-  padding: 16px 0 16px 22px;
+  padding: 14px 0 18px 22px;
   text-align: left;
 }
 
@@ -1931,5 +1930,7 @@ textarea::placeholder {
   /*padding: 0 10px 0;*/
   box-sizing: border-box;
 }
-
+.current-slide {
+  display: block;
+}
 
