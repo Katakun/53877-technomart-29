@@ -1209,7 +1209,9 @@ img {
   margin-top: 23px;
   margin-bottom: 34px;
 }
-
+.about-map a {
+  display: block;
+}
 .about-map button {
   width: 100%;
   margin-top: 18px;
@@ -1310,7 +1312,7 @@ img {
 .footer-nav-company {
   list-style: none;
   display: flex;
-  width: 569px;
+  width: 567px;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
@@ -1337,7 +1339,7 @@ img {
 
 .footer-nav-goods {
   padding: 0;
-  margin: 20px 0 0;
+  margin: 22px 0 0;
   list-style: none;
   width: 545px;
   display: flex;
@@ -1403,7 +1405,7 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 134px;
+  width: 133px;
 }
 
 .footer-social-flex address {
