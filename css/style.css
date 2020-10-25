@@ -582,9 +582,11 @@ img {
   gap: 20px;
   margin-bottom: 59px;
 }
+
 .new {
   position: relative
 }
+
 .new::before {
   content: "NEW";
   position: absolute;
@@ -717,6 +719,7 @@ img {
   box-sizing: border-box;
   width: 100%;
 }
+
 /*TODO объединить в один класс*/
 .slider-controls button:first-child {
   padding: 0;
@@ -820,8 +823,8 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: -38px 0 0;
   grid-column: 1 / -1;
   display: flex;
   justify-content: flex-start;
@@ -843,7 +846,7 @@ img {
   width: 8px;
   height: 12px;
   top: 3px;
-  right: -24px;
+  right: -25px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -856,6 +859,7 @@ img {
 .bread-crumbs-current::after {
   display: none;
 }
+
 /*TODO бордер 1 пкс*/
 .catalog-item {
   box-sizing: border-box;
@@ -1037,6 +1041,12 @@ img {
   grid-column: 1 / -1;
 }
 
+.page-catalog .main-section-bar {
+  /*margin-top: -19px;*/
+  /*margin-bottom: -2px;*/
+  margin: -19px 0 -2px;
+}
+
 .index-section-bgcolor {
   background-color: var(--linen);
 }
@@ -1205,13 +1215,16 @@ img {
 .about-map {
   width: 300px;
 }
+
 .about-map p {
   margin-top: 23px;
   margin-bottom: 34px;
 }
+
 .about-map a {
   display: block;
 }
+
 .about-map button {
   width: 100%;
   margin-top: 18px;
@@ -1220,9 +1233,11 @@ img {
 .about-transport {
   width: 460px;
 }
+
 .about-transport p:first-of-type {
   margin-top: 23px;
 }
+
 .about-transport p:last-of-type {
   margin-top: 26px;
   margin-bottom: 0;
@@ -1363,6 +1378,7 @@ img {
   color: var(--alice-blue);
   text-decoration: underline;
 }
+
 .footer-nav-goods a:hover {
   text-decoration: underline;
 }
@@ -1426,6 +1442,7 @@ img {
   justify-content: center;
   border-radius: 50%;
 }
+
 .social-icon img {
   margin-top: 4px;
 }
@@ -1592,11 +1609,13 @@ textarea::placeholder {
   margin-top: -141px;
   display: none;
 }
+
 .modal-shopping-cart-header {
   padding-left: 176px;
   margin-top: 73px;
   margin-bottom: 67px;
 }
+
 .modal-shopping-cart-header h2 {
   font-family: var(--cuprum);
   font-style: normal;
@@ -1605,6 +1624,7 @@ textarea::placeholder {
   line-height: 30px;
   margin: 0;
 }
+
 .modal-shopping-cart-header::before {
   content: "";
   position: absolute;
@@ -1616,6 +1636,7 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .modal-shopping-cart-buttons {
   width: 394px;
   height: 38px;
@@ -1623,12 +1644,14 @@ textarea::placeholder {
   display: flex;
   justify-content: space-between;
 }
+
 .modal-shopping-cart-buttons button {
   width: 192px;
   padding-right: 0;
   padding-left: 0;
   cursor: pointer;
 }
+
 .modal-shopping-cart-buttons button:last-child {
   color: var(--black);
   background-color: var(--white);
@@ -1672,7 +1695,7 @@ textarea::placeholder {
 /*Рейндж-фильтр*/
 .range-filter {
   width: 220px;
-  margin-top: 10px;
+  margin-top: 14px;
   margin-bottom: 25px;
 }
 
@@ -1696,6 +1719,7 @@ textarea::placeholder {
   width: 70%;
   height: 2px;
   background: #00ca74;
+  margin-left: 5%;
 }
 
 .range-controls .toggle {
@@ -1874,6 +1898,10 @@ textarea::placeholder {
   font-weight: inherit;
   flex-grow: 1;
 }
+.head-bar:nth-child(2) h2 {
+  margin-left: -2px;
+}
+
 
 .head-bar button {
   line-height: inherit;
@@ -1891,12 +1919,14 @@ textarea::placeholder {
 }
 
 .head-bar button:last-child {
-  margin-left: 21px;
+  margin-left: 20px;
+  margin-top: 2px;
 }
 
 .head-bar button:nth-of-type(4) {
   margin-left: 46px;
   transform: rotate(180deg);
+  margin-top: 1px;
 }
 
 .head-bar button:nth-of-type(3) {
@@ -1912,6 +1942,7 @@ textarea::placeholder {
   opacity: 1;
   border: none;
 }
+
 /*TODO Перенести все филл на свг с пата консулт1 36мин, 3-я вложенность*/
 .sort-current svg path {
   fill: var(--basic-amaranth);
@@ -2011,6 +2042,7 @@ textarea::placeholder {
   /*padding: 0 10px 0;*/
   box-sizing: border-box;
 }
+
 .current-slide {
   display: block;
 }
