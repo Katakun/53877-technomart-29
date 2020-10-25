@@ -1471,11 +1471,8 @@ img {
   margin: auto;
   background-color: var(--white);
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-  display: none;
 }
-.modal-show {
-  display: block;
-}
+
 
 .modal-wrapper {
   width: 460px;
@@ -1493,6 +1490,7 @@ img {
   top: 180px;
   bottom: auto;
   width: 620px;
+  display: none;
 }
 
 .write-us-form {
@@ -1552,7 +1550,7 @@ textarea::placeholder {
   border-radius: 2px;
 }
 
-.modal-write-us-bottom-section {
+.modal-bottom-section {
   background-color: #f4f4f4;
   height: 112px;
   display: flex;
@@ -1576,6 +1574,7 @@ textarea::placeholder {
   bottom: auto;
   width: 943px;
   height: 449px;
+  display: none;
 }
 
 .modal-map div {
@@ -1583,6 +1582,57 @@ textarea::placeholder {
   height: 449px;
 }
 
+/*modal-shopping-cart*/
+.modal-shopping-cart {
+  width: 620px;
+  height: 282px;
+  left: 50%;
+  top: 50%;
+  margin-left: -310px;
+  margin-top: -141px;
+  display: none;
+}
+.modal-shopping-cart-header {
+  padding-left: 176px;
+  margin-top: 73px;
+  margin-bottom: 67px;
+}
+.modal-shopping-cart-header h2 {
+  font-family: var(--cuprum);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+.modal-shopping-cart-header::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.modal-shopping-cart-buttons {
+  width: 394px;
+  height: 38px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-shopping-cart-buttons button {
+  width: 192px;
+  padding-right: 0;
+  padding-left: 0;
+  cursor: pointer;
+}
+.modal-shopping-cart-buttons button:last-child {
+  color: var(--black);
+  background-color: var(--white);
+}
 
 /* Каталог */
 
@@ -1964,4 +2014,3 @@ textarea::placeholder {
 .current-slide {
   display: block;
 }
-
