@@ -1683,6 +1683,10 @@ textarea::placeholder {
   border-bottom: 1px solid #E5E5E5;
 }
 
+.filter > fieldset:nth-child(1) {
+  margin-top: 13px;
+}
+
 .head-bar h2 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1695,7 +1699,7 @@ textarea::placeholder {
 /*Рейндж-фильтр*/
 .range-filter {
   width: 220px;
-  margin-top: 14px;
+  margin-top: 11px;
   margin-bottom: 25px;
 }
 
