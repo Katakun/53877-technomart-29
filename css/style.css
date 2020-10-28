@@ -583,12 +583,8 @@ img {
   margin-bottom: 59px;
 }
 
-.new {
-  position: relative
-}
 
-.new::before {
-  content: "NEW";
+.sticker {
   position: absolute;
   top: 7px;
   right: -26px;
@@ -599,6 +595,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   text-align: center;
+  text-transform: uppercase;
   color: var(--white);
   background-color: var(--basic-amaranth);
   transform: rotate(45deg);
@@ -864,7 +861,7 @@ img {
 /*TODO бордер 1 пкс*/
 .catalog-item {
   box-sizing: border-box;
-  outline: 1px solid var(--whisper);
+  border: 1px solid var(--whisper);
   width: 220px;
   height: 318px;
   display: flex;
@@ -912,8 +909,8 @@ img {
 
 .catalog-item img {
   margin: auto auto 0 auto;
-  padding-right: 9px;
-  padding-bottom: 7px;
+  padding-right: 13px;
+  padding-bottom: 8px;
 }
 
 
@@ -930,11 +927,10 @@ img {
   margin-bottom: 13px;
 }
 
-/*.catalog-item button {*/
-/*  margin-bottom: 20px;*/
-/*  padding: 10px 0;*/
-/*  width: 141px;*/
-/*}*/
+.main-goods-list .catalog-item:first-child img {
+  padding-right: 0px;
+  padding-bottom: 3px;
+}
 
 
 .old-price {
@@ -1069,7 +1065,7 @@ img {
 .main-brands-item {
   box-sizing: border-box;
   background-color: var(--white);
-  outline: 1px solid #EAEAEA;
+  border: 1px solid #EAEAEA;
   width: 220px;
   height: 145px;
   display: flex;
