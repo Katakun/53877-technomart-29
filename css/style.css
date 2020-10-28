@@ -618,11 +618,11 @@ img {
 }
 
 .promo-material {
-  background: var(--golden-tainoi) url("../img/icon-vedro.svg") no-repeat 213px 31px;
+  background: var(--golden-tainoi) url("../img/icon-bucket.svg") no-repeat 213px 31px;
 }
 
 .promo-instrument {
-  background: var(--summer-sky) url("../img/icon-drel.svg") no-repeat 194px 34px;
+  background: var(--summer-sky) url("../img/icon-drill.svg") no-repeat 194px 34px;
 }
 
 .promo-technic {
