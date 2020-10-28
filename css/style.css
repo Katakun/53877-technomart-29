@@ -912,7 +912,10 @@ img {
 
 .catalog-item img {
   margin: auto auto 0 auto;
+  padding-right: 9px;
+  padding-bottom: 7px;
 }
+
 
 .catalog-item p {
   display: flex;
@@ -1134,6 +1137,7 @@ img {
 .service-text-item {
   height: 100%;
   display: none;
+  padding-right: 300px;
 }
 
 .service-text-list li:first-child {
