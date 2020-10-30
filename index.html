@@ -25,16 +25,14 @@
       <!-- Поиск -->
       <form class="main-topbar-search" action="https://echo.htmlacademy.ru" method="GET">
         <label class="visually-hidden" for="header-search">Поиск</label>
-        <input class="header-input-search" placeholder="Поиск:" id="header-search">
-
-        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <input class="header-input-search" placeholder="Поиск:" id="header-search" name="search">
+        <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
           <title>Поиск</title>
           <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
                 fill="white"/>
         </svg>
-
-
       </form>
 
       <!-- Меню покупок-->
@@ -59,7 +57,8 @@
 
     <div>
       <a class="login" href="blank.html">
-        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" focusable="false" width="20" height="17" viewBox="0 0 20 17" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
           <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
           <path
             d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z"
@@ -94,7 +93,8 @@
     <section class="promo container">
       <h2 class="visually-hidden">Промо-блок</h2>
 
-      <div class="promo-item promo-material new">
+      <div class="promo-item promo-material">
+        <span class="sticker">new</span>
         <h3>Материалы</h3>
         <a class="button promo-button" href="blank.html">на любой вкус</a>
       </div>
@@ -137,8 +137,8 @@
         </div>
         <!--индикаторы слайдера-->
         <div class="slider-indication">
-          <button type="button" aria-label="Первый слайд"></button>
-          <button class="current" type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Первый слайд" tabindex="-1"></button>
+          <button class="current" type="button" aria-label="Второй слайд" tabindex="-1"></button>
         </div>
       </div>
 
@@ -152,34 +152,27 @@
       </div>
       <ul class="main-goods-list">
 
-        <li class="catalog-item">
-          <a class="button buy-button display-none">купить</a>
-          <a class="button to-bookmark-button display-none">в закладки</a>
+        <li class="catalog-item" tabindex="0">
+          <a class="button buy-button" tabindex="0">купить</a>
+          <a class="button to-bookmark-button" tabindex="0">в закладки</a>
 
-          <a class="catalog-item-top" href="blank.html ">
+          <a class="catalog-item-top" href="blank.html" tabindex="-1">
             <h3>Перфоратор BOSCH BFG 9000</h3>
-
-            <img src="img/bfg-9000.jpg " width="184" height="164"
-                 alt="Перфоратор BOSCH BFG 9000 ">
-
+            <img src="img/bfg-9000.jpg " width="184" height="164" alt="Перфоратор BOSCH BFG 9000 ">
           </a>
-
           <p>
             <del class="old-price ">32500 Р.</del>
             <button class="price-button " type="button">25500 Р.</button>
           </p>
         </li>
 
-        <li class="catalog-item">
-          <a class="button buy-button display-none">купить</a>
-          <a class="button to-bookmark-button display-none">в закладки</a>
+        <li class="catalog-item" tabindex="0">
+          <a class="button buy-button" tabindex="0">купить</a>
+          <a class="button to-bookmark-button" tabindex="0">в закладки</a>
           <span class="sticker">new</span>
-          <a class="catalog-item-top" href="blank.html ">
+          <a class="catalog-item-top" href="blank.html" tabindex="-1">
             <h3>Перфоратор BOSCH BFG 3000</h3>
-
-            <img src="img/bfg-3000.jpg " width="127" height="112"
-                 alt="Перфоратор BOSCH BFG 3000 ">
-
+            <img src="img/bfg-3000.jpg " width="127" height="112" alt="Перфоратор BOSCH BFG 3000 ">
           </a>
           <p>
             <del class="old-price ">22500 Р.</del>
@@ -187,16 +180,13 @@
           </p>
         </li>
 
-        <li class="catalog-item">
-          <a class="button buy-button display-none">купить</a>
-          <a class="button to-bookmark-button display-none">в закладки</a>
+        <li class="catalog-item" tabindex="0">
+          <a class="button buy-button" tabindex="0">купить</a>
+          <a class="button to-bookmark-button" tabindex="0">в закладки</a>
 
-          <a class="catalog-item-top" href="blank.html ">
+          <a class="catalog-item-top" href="blank.html" tabindex="-1">
             <h3>Перфоратор BOSCH BFG 6000</h3>
-
-            <img src="img/bfg-6000.jpg " width="144" height="128"
-                 alt="Перфоратор BOSCH BFG 6000 ">
-
+            <img src="img/bfg-6000.jpg " width="144" height="128" alt="Перфоратор BOSCH BFG 6000 ">
           </a>
           <p>
             <del class="old-price ">30500 Р.</del>
@@ -204,16 +194,13 @@
           </p>
         </li>
 
-        <li class="catalog-item">
-          <a class="button buy-button display-none">купить</a>
-          <a class="button to-bookmark-button display-none">в закладки</a>
+        <li class="catalog-item" tabindex="0">
+          <a class="button buy-button" tabindex="0">купить</a>
+          <a class="button to-bookmark-button" tabindex="0">в закладки</a>
           <span class="sticker">new</span>
-          <a class="catalog-item-top" href="blank.html ">
+          <a class="catalog-item-top" href="blank.html" tabindex="-1">
             <h3>Перфоратор BOSCH BFG 2000</h3>
-
-            <img src="img/bfg-2000.jpg " width="127" height="112"
-                 alt="Перфоратор BOSCH BFG 2000 ">
-
+            <img src="img/bfg-2000.jpg " width="127" height="112" alt="Перфоратор BOSCH BFG 2000 ">
           </a>
           <p>
             <button class="price-button " type="button">12500 Р.</button>
@@ -230,8 +217,8 @@
       </div>
       <ul class="main-brands-list">
 
-        <li class="main-brands-item">
-          <a href="blank.html ">
+        <li class="main-brands-item" >
+          <a href="blank.html" >
             <img src="img/bosch.jpg " width="126" height="37" alt="Логотип BOSCH ">
           </a>
         </li>
@@ -409,15 +396,15 @@
 
         <ul>
           <li class="social-icon-vk">
-            <h3 class="visually-hidden">Вконтакте</h3>
+            <span class="visually-hidden">Вконтакте</span>
             <a class="social-icon " href="blank.html"></a>
           </li>
           <li class="social-icon-fb">
-            <h3 class="visually-hidden">Фейсбук</h3>
+            <span class="visually-hidden">Фейсбук</span>
             <a class="social-icon " href="blank.html"></a>
           </li>
           <li class="social-icon-insta">
-            <h3 class="visually-hidden">Инстаграм</h3>
+            <span class="visually-hidden">Инстаграм</span>
             <a class="social-icon " href="blank.html"></a>
           </li>
         </ul>
@@ -431,8 +418,9 @@
 
 </footer>
 
+<!--TODO кнопку прявязать к форме, не отправляет данные-->
 <section class="modal modal-write-us">
-  <h2 class="visually-hidden">Напишшите нам</h2>
+  <h2 class="visually-hidden">Напишите нам</h2>
   <form class="write-us-form modal-wrapper" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label class="modal-write-us-label" for="write-us-name">Ваше имя</label><br>
