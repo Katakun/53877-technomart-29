@@ -1677,12 +1677,20 @@ textarea::placeholder {
 
 /* Каталог */
 
-.page-catalog {
+/*.page-catalog {*/
+/*  display: grid;*/
+/*  grid-template-columns: 220px 1fr;*/
+/*  align-content: start;*/
+/*  gap: 20px;*/
+/*}*/
+
+.page-catalog > .container {
   display: grid;
   grid-template-columns: 220px 1fr;
   align-content: start;
   gap: 20px;
 }
+
 
 /* Фильтр */
 
