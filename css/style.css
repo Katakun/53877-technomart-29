@@ -1608,6 +1608,9 @@ textarea::placeholder {
   height: 112px;
   display: flex;
 }
+.modal-bottom-section input {
+  border: none;
+}
 
 .modal-close {
   position: absolute;
