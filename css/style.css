@@ -1244,9 +1244,6 @@ img {
 
 .about-map a {
   display: block;
-}
-
-.about-map button {
   width: 100%;
   margin-top: 18px;
 }
@@ -1338,6 +1335,7 @@ img {
 
 .footer-address a {
   color: var(--magnolia);
+  display: block;
 }
 
 .top-footer-nav {
@@ -1533,7 +1531,7 @@ img {
 }
 
 .write-us-form.modal-wrapper {
-  padding-top: 46px;
+  padding-top: 39px;
 }
 
 
@@ -1550,15 +1548,22 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 318px;
+  height: 272px;
 }
+.modal-wrapper.write-us-submit {
+  border: none;
+  position: absolute;
+  bottom: 37px;
+}
+
 
 .write-us-form p {
   margin: 0;
 }
 
-.write-us-form p:last-child {
+.write-us-form p:nth-child(3) {
   flex-grow: 1;
+  margin-top: -16px;
 }
 
 .modal-write-us-name,
@@ -1575,6 +1580,7 @@ img {
   width: 100%;
   margin-top: 10px;
   padding: 5px 10px;
+  height: 115px;
 }
 
 
@@ -1584,6 +1590,7 @@ img {
   color: var(--black);
   font-weight: normal;
   font-family: var(--cuprum);
+  display: block;
 }
 
 .modal input[type="text"]::placeholder,
@@ -1630,7 +1637,7 @@ textarea::placeholder {
   bottom: auto;
   width: 943px;
   height: 449px;
-  display: none;
+  /*display: none;*/
 }
 
 .modal-map div {
