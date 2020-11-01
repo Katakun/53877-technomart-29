@@ -1885,7 +1885,7 @@ li.filter-radio:nth-child(1) {
   padding: 10px 0;
 }
 
-.filter button {
+.filter > button {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
