@@ -1637,10 +1637,10 @@ textarea::placeholder {
   bottom: auto;
   width: 943px;
   height: 449px;
-  /*display: none;*/
+  display: none;
 }
 
-.modal-map div {
+.modal-map-iframe {
   background: url("../img/map-big.png") no-repeat;
   height: 449px;
 }
@@ -1695,6 +1695,9 @@ textarea::placeholder {
   width: 192px;
   padding-right: 0;
   padding-left: 0;
+  cursor: pointer;
+}
+.modal-shopping-cart-buttons a {
   cursor: pointer;
 }
 
