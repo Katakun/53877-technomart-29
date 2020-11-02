@@ -1541,6 +1541,7 @@ img {
   top: 180px;
   bottom: auto;
   width: 620px;
+  height: 430px;
   display: none;
 }
 
@@ -1552,10 +1553,7 @@ img {
 }
 .modal-wrapper.write-us-submit {
   border: none;
-  position: absolute;
-  bottom: 37px;
 }
-
 
 .write-us-form p {
   margin: 0;
@@ -1563,7 +1561,7 @@ img {
 
 .write-us-form p:nth-child(3) {
   flex-grow: 1;
-  margin-top: -16px;
+  margin-top: -18px;
 }
 
 .modal-write-us-name,
@@ -1614,6 +1612,10 @@ textarea::placeholder {
   background-color: #f4f4f4;
   height: 112px;
   display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .modal-bottom-section input {
   border: none;
