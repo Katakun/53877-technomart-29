@@ -1532,6 +1532,27 @@ img {
   margin: auto;
 }
 
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .write-us-form.modal-wrapper {
   padding-top: 39px;
 }
@@ -1716,6 +1737,7 @@ textarea::placeholder {
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
 }
 
 /* Каталог */
