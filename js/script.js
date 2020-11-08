@@ -19,6 +19,9 @@ const topMenuCart = document.querySelector('.main-topbar-cart');
 const cartModal = document.querySelector('.modal-shopping-cart');
 const cartModalClose = cartModal.querySelector('.modal-close')
 
+const bookmarkButtons = document.querySelectorAll('.to-bookmark-button');
+const topMenuBookmark = document.querySelector('.main-topbar-bookmark');
+
 // Модальное окно с картой
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -116,3 +119,13 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+// Меню закладки меняет фон по нажатию на кнопку в закладки
+for (let i = 0; i < bookmarkButtons.length; i++) {
+  const bookmarkButton = bookmarkButtons[i];
+  bookmarkButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    topMenuBookmark.classList.add("main-topbar-active");
+    console.log('нажата кнопка в закладки')
+  })
+}
