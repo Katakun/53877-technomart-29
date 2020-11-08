@@ -22,6 +22,11 @@ const cartModalClose = cartModal.querySelector('.modal-close')
 const bookmarkButtons = document.querySelectorAll('.to-bookmark-button');
 const topMenuBookmark = document.querySelector('.main-topbar-bookmark');
 
+const sliderButtonleft = document.querySelector('.slider-controls button:first-child');
+const sliderButtonRight = document.querySelector('.slider-controls button:last-child');
+const promoSlide1 = document.querySelector('.promo-slider-list .slide-item:first-child');
+const promoSlide2 = document.querySelector('.promo-slider-list .slide-item:last-child');
+
 // Модальное окно с картой
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -129,3 +134,15 @@ for (let i = 0; i < bookmarkButtons.length; i++) {
     console.log('нажата кнопка в закладки')
   })
 }
+
+// Промо слайдер
+sliderButtonleft.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  promoSlide1.classList.toggle("current-slide");
+  promoSlide2.classList.toggle("current-slide");
+})
+sliderButtonRight.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  promoSlide1.classList.toggle("current-slide");
+  promoSlide2.classList.toggle("current-slide");
+})
