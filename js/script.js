@@ -26,6 +26,8 @@ const sliderButtonleft = document.querySelector('.slider-controls button:first-c
 const sliderButtonRight = document.querySelector('.slider-controls button:last-child');
 const promoSlide1 = document.querySelector('.promo-slider-list .slide-item:first-child');
 const promoSlide2 = document.querySelector('.promo-slider-list .slide-item:last-child');
+const promoSlideIndicator1 = document.querySelector('.slider-indication button:first-child')
+const promoSlideIndicator2 = document.querySelector('.slider-indication button:last-child')
 
 // Модальное окно с картой
 mapLink.addEventListener("click", function (evt) {
@@ -140,9 +142,14 @@ sliderButtonleft.addEventListener("click", function (evt) {
   evt.preventDefault();
   promoSlide1.classList.toggle("current-slide");
   promoSlide2.classList.toggle("current-slide");
+  promoSlideIndicator1.classList.toggle("current");
+  promoSlideIndicator2.classList.toggle("current");
+
 })
 sliderButtonRight.addEventListener("click", function (evt) {
   evt.preventDefault();
   promoSlide1.classList.toggle("current-slide");
   promoSlide2.classList.toggle("current-slide");
+  promoSlideIndicator1.classList.toggle("current");
+  promoSlideIndicator2.classList.toggle("current");
 })
