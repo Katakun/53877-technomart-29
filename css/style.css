@@ -184,7 +184,7 @@ img {
 }
 
 
-.header-input-search:focus + svg path {
+.header-input-search:focus + svg {
   fill: var(--basic-amaranth);
 }
 
@@ -212,7 +212,6 @@ img {
   color: var(--white);
 }
 
-/*TODO фон по клику*/
 .main-topbar-user-menu {
   margin-left: auto;
   display: flex;
@@ -259,11 +258,10 @@ img {
 
 .main-topbar-bookmark:active,
 .main-topbar-cart:active {
-  opacity: 0.3;
+  opacity: 0.5;
+  background-color: var(--black-russian);
 }
 
-/*TODO вместо width сделать по-другому
-   от переполнения чтобы расширялось*/
 .main-topbar-user-menu .main-topbar-order {
   background-color: var(--basic-apple);
   text-align: center;
@@ -404,15 +402,15 @@ img {
   padding-right: 28px;
 }
 
-.login:hover svg path,
-.user-id:hover svg path,
-.user-exit:hover svg path {
+.login:hover svg,
+.user-id:hover svg,
+.user-exit:hover svg {
   fill: var(--chambray);
 }
 
-.login:active svg path,
-.user-id:active svg path,
-.user-exit:active svg path {
+.login:active svg,
+.user-id:active svg,
+.user-exit:active svg {
   fill: var(--silver);
 }
 
@@ -860,7 +858,6 @@ img {
   display: none;
 }
 
-/*TODO бордер 1 пкс*/
 .catalog-item {
   box-sizing: border-box;
   border: 1px solid var(--whisper);
@@ -1896,7 +1893,6 @@ li.filter-radio:nth-child(1) {
 }
 
 
-/*TODO убрать подчеркивание при визитет*/
 .filter legend {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
@@ -1974,7 +1970,6 @@ li.filter-radio:nth-child(1) {
   background-position: 0 0;
 }
 
-/*TODO добвить состояния лейблам чекбоксам и радиобатонам ховер актив блокирован*/
 .filter-option label {
   position: relative;
   display: block;
@@ -2010,7 +2005,6 @@ li.filter-radio:nth-child(1) {
   border-radius: 50%;
 }
 
-/*TODO добавить блокам бордер-радиус*/
 /*Sort*/
 .head-bar {
   text-transform: uppercase;
@@ -2077,8 +2071,7 @@ li.filter-radio:nth-child(1) {
   border: none;
 }
 
-/*TODO Перенести все филл на свг с пата консулт1 36мин, 3-я вложенность*/
-.sort-current svg path {
+.sort-current svg {
   fill: var(--basic-amaranth);
 }
 
@@ -2087,8 +2080,8 @@ li.filter-radio:nth-child(1) {
   border-bottom: 1px solid var(--basic-amaranth);
 }
 
-.sort-arrow-up:hover:not(.sort-current) svg path,
-.sort-arrow-down:hover:not(.sort-current) svg path {
+.sort-arrow-up:hover:not(.sort-current) svg,
+.sort-arrow-down:hover:not(.sort-current) svg {
   fill: var(--black);
 }
 
