@@ -57,10 +57,10 @@ img {
   height: auto;
 }
 
-button:focus:not(:active),
-label:focus:not(:active) {
-  outline: none;
-}
+/*button:focus:not(:active),*/
+/*label:focus:not(:active) {*/
+/*  outline: none;*/
+/*}*/
 
 /* Outline */
 
@@ -623,23 +623,38 @@ label:focus:not(:active) {
 }
 
 .promo-material {
-  background: var(--golden-tainoi) url("../img/icon-bucket.svg") no-repeat 213px 31px;
+  background-color: var(--golden-tainoi);
+  background-image: url("../img/icon-bucket.svg");
+  background-repeat: no-repeat;
+  background-position: 213px 31px;
 }
 
 .promo-instrument {
-  background: var(--summer-sky) url("../img/icon-drill.svg") no-repeat 194px 34px;
+  background-color: var(--summer-sky);
+  background-image: url("../img/icon-drill.svg");
+  background-repeat: no-repeat;
+  background-position: 194px 34px;
 }
 
 .promo-technic {
-  background: var(--plum) url("../img/icon-tractor.svg") no-repeat 191px 31px;
+  background-color: var(--plum);
+  background-image: url("../img/icon-tractor.svg");
+  background-repeat: no-repeat;
+  background-position: 191px 31px;
 }
 
 .promo-sale {
-  background: var(--de-york) url("../img/icon-sale.svg") no-repeat 196px 26px;
+  background-color: var(--de-york);
+  background-image: url("../img/icon-sale.svg");
+  background-repeat: no-repeat;
+  background-position: 196px 26px;
 }
 
 .promo-delivery {
-  background: var(--golden-tainoi) url("../img/icon-delivery.svg") no-repeat 191px 32px;
+  background-color: var(--golden-tainoi);
+  background-image: url("../img/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
 }
 
 .promo-button {
@@ -2163,7 +2178,6 @@ li.filter-radio:nth-child(1) {
 .container {
   width: 940px;
   margin: 0 auto;
-  /*padding: 0 10px 0;*/
   box-sizing: border-box;
 }
 

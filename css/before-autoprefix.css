@@ -57,6 +57,11 @@ img {
   height: auto;
 }
 
+/*button:focus:not(:active),*/
+/*label:focus:not(:active) {*/
+/*  outline: none;*/
+/*}*/
+
 /* Outline */
 
 .outline-red {
@@ -1058,25 +1063,13 @@ img {
 }
 
 .main-brands-list {
-  margin: 0 0 66px;
+  margin: 0 0 70px;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
-/*.main-brands-item {*/
-/*  box-sizing: border-box;*/
-/*  background-color: var(--white);*/
-/*  border: 1px solid #EAEAEA;*/
-/*  width: 220px;*/
-/*  height: 145px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  margin-top: 2px;*/
-/*}*/
 
 .main-brands-item a {
   box-sizing: border-box;
@@ -1087,7 +1080,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2px;
 }
 
 .main-brands-item:hover {
