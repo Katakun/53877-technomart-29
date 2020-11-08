@@ -1855,6 +1855,10 @@ li.filter-radio:nth-child(1) {
   cursor: pointer;
 }
 
+.range-controls .toggle:hover {
+  border: 8px solid #ffffff;
+}
+
 .range-controls .toggle-min {
   left: 18px;
 }
