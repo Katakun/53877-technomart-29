@@ -57,6 +57,11 @@ img {
   height: auto;
 }
 
+button:focus:not(:active),
+label:focus:not(:active) {
+  outline: none;
+}
+
 /* Outline */
 
 .outline-red {
