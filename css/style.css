@@ -1179,7 +1179,7 @@ img {
 }
 .service p {
   font-size: 13px;
-  line-height: 24.4px;
+  line-height: 25px;
   color: var(--black);
   font-weight: normal;
   font-family: var(--pt-sans);
@@ -1802,7 +1802,7 @@ fieldset:nth-child(2) ul {
 }
 fieldset:nth-child(2) {
   padding-bottom: 5px;
-  margin-top: 12px;
+  margin-top: 12.5px;
 }
 fieldset:nth-child(3) {
   margin-top: 17px;
