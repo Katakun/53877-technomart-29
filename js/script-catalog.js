@@ -10,24 +10,24 @@ const topMenuBookmark = document.querySelector('.main-topbar-bookmark');
 // Кнопка купить
 for (let i = 0; i < buyButtons.length; i++) {
   const buyButton = buyButtons[i];
-  buyButton.addEventListener("click", function (evt) {
+  buyButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    topMenuCart.classList.add("main-topbar-active");
-    cartModal.classList.add("modal-show");
+    topMenuCart.classList.add('main-topbar-active');
+    cartModal.classList.add('modal-show');
   })
 }
 
 // Модальное окно товар добавлен в корзину
-cartModalClose.addEventListener("click", function (evt) {
+cartModalClose.addEventListener('click', function (evt) {
   evt.preventDefault();
-  cartModal.classList.remove("modal-show");
+  cartModal.classList.remove('modal-show');
 })
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (cartModal.classList.contains("modal-show")) {
+    if (cartModal.classList.contains('modal-show')) {
       evt.preventDefault();
-      cartModal.classList.remove("modal-show");
+      cartModal.classList.remove('modal-show');
     }
   }
 });
@@ -35,9 +35,9 @@ window.addEventListener("keydown", function (evt) {
 // Меню закладки меняет фон по нажатию на кнопку в закладки
 for (let i = 0; i < bookmarkButtons.length; i++) {
   const bookmarkButton = bookmarkButtons[i];
-  bookmarkButton.addEventListener("click", function (evt) {
+  bookmarkButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    topMenuBookmark.classList.add("main-topbar-active");
+    topMenuBookmark.classList.add('main-topbar-active');
     console.log('нажата кнопка в закладки')
   })
 }
