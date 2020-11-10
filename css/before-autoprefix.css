@@ -524,6 +524,7 @@ img {
   margin-left: 7px;
   padding-top: 14px;
   padding-right: 18px;
+  vertical-align: baseline;
 }
 
 .separator {
