@@ -2564,9 +2564,10 @@ li.filter-radio:nth-child(1) {
 /*Article*/
 
 .catalog-article {
-  height: 261px;
+  min-height: 261px;
   background-color: var(--alice-blue);
   padding-top: 65px;
+  padding-bottom: 1px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 59px;
@@ -2584,6 +2585,7 @@ li.filter-radio:nth-child(1) {
 
 .catalog-article p {
   margin-top: 24px;
+  margin-bottom: 25px;
   line-height: 25px;
 }
 
