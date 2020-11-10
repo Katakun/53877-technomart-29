@@ -35,6 +35,7 @@
   --magnolia: #F3F7F9;
   --rock-blue: #99A1AE;
   --social: #212A3A;
+  /*E5E5E5*/
   --cuprum: Cuprum, "Arial Narrow", sans-serif;
   --pt-sans: "PT Sans", Arial, sans-serif;
 }
@@ -1253,10 +1254,6 @@ img {
 }
 
 .page-catalog .main-section-bar {
-  /*margin-top: -19px;
-  */
-  /*margin-bottom: -2px;
-  */
   margin: -19px 0 -2px;
 }
 
@@ -2268,6 +2265,10 @@ li.filter-radio:nth-child(1) {
   text-transform: uppercase;
 }
 
+.filter-disabled {
+  opacity: 0.4;
+}
+
 .filter label {
   font-family: var(--pt-sans);
   font-size: 15px;
@@ -2304,10 +2305,10 @@ li.filter-radio:nth-child(1) {
   list-style: none;
 }
 
-.filter-checkbox label:hover::before,
-.filter-checkbox label:hover::after,
-.filter-radio label:hover::before,
-.filter-radio label:hover::after {
+.filter-checkbox:not(.filter-disabled) label:hover::before,
+.filter-checkbox:not(.filter-disabled) label:hover::after,
+.filter-radio:not(.filter-disabled) label:hover::before,
+.filter-radio:not(.filter-disabled) label:hover::after {
   -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
