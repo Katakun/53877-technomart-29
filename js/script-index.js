@@ -5,6 +5,9 @@ const mapModalClose = mapModal.querySelector('.modal-close');
 const writeUsLink = document.querySelector('.about-map .button');
 const writeUsModal = document.querySelector('.modal-write-us');
 const writeUsModalClose = writeUsModal.querySelector('.modal-close');
+const writeUsNameInput = writeUsModal.querySelector('.modal-write-us-name');
+const writeUsEmailInput = writeUsModal.querySelector('.modal-write-us-email');
+const writeUsMessageInput = writeUsModal.querySelector('.modal-write-us-message');
 
 const serviceButton1 = document.querySelector('.service-item:first-child .service-button')
 const serviceButton2 = document.querySelector('.service-item:nth-last-child(2) .service-button')
@@ -58,6 +61,7 @@ writeUsLink.addEventListener('click', function (evt) {
 writeUsModalClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   writeUsModal.classList.remove('modal-show');
+  writeUsModal.classList.remove('modal-error');
 })
 
 window.addEventListener('keydown', function (evt) {
@@ -65,10 +69,19 @@ window.addEventListener('keydown', function (evt) {
     if (writeUsModal.classList.contains('modal-show')) {
       evt.preventDefault();
       writeUsModal.classList.remove('modal-show');
+      writeUsModal.classList.remove('modal-error');
     }
   }
 });
 
+writeUsModal.addEventListener("submit", function (evt) {
+  if (!writeUsNameInput.value || !writeUsEmailInput.value || !writeUsMessageInput.value) {
+    evt.preventDefault();
+    writeUsModal.classList.remove("modal-error");
+    writeUsModal.offsetWidth = writeUsModal.offsetWidth;
+    writeUsModal.classList.add('modal-error');
+  }
+})
 
 // Слайдер сервисы
 serviceButton1.addEventListener('click', function (evt) {
@@ -81,6 +94,7 @@ serviceButton1.addEventListener('click', function (evt) {
   serviceText2.classList.remove('current-slide')
   serviceText3.classList.remove('current-slide')
 })
+
 serviceButton2.addEventListener('click', function (evt) {
   evt.preventDefault();
   serviceButton2.classList.add('service-button-active');
@@ -91,6 +105,7 @@ serviceButton2.addEventListener('click', function (evt) {
   serviceText1.classList.remove('current-slide')
   serviceText3.classList.remove('current-slide')
 })
+
 serviceButton3.addEventListener('click', function (evt) {
   evt.preventDefault();
   serviceButton3.classList.add('service-button-active');
@@ -146,6 +161,7 @@ sliderButtonleft.addEventListener('click', function (evt) {
   promoSlideIndicator2.classList.toggle('current');
 
 })
+
 sliderButtonRight.addEventListener('click', function (evt) {
   evt.preventDefault();
   promoSlide1.classList.toggle('current-slide');
